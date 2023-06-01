@@ -1,4 +1,6 @@
 import enum
+import random
+from typing import Generator
 
 
 class Sectors(enum.Enum):
@@ -86,3 +88,30 @@ chosen_stocks: dict[Sectors, list[str]] = {
         "COST",  # Costco Wholesale Corporation
     ],
 }
+
+NUMBER_OF_STOCKS = sum(map(len, chosen_stocks.values()))
+NUMBER_OF_SECTORS = len(chosen_stocks)
+
+
+def create_stock_generator() -> Generator[tuple[Sectors, str], None, None]:
+    for sector_name, stocks in chosen_stocks.items():
+        for stock in stocks:
+            yield sector_name, stock
+
+
+def get_randomized_stock_list() -> list[tuple[Sectors, str]]:
+    stocks = [it for it in create_stock_generator()]
+    random.shuffle(stocks)
+    return stocks
+
+
+stocks_symbols = [stock_name for _, stock_name in create_stock_generator()]
+
+
+def get_company_sector(company: str):
+    for sector, stocks in chosen_stocks.items():
+        for stock in stocks:
+            if stock == company:
+                return sector
+
+    assert False, "Could not find company in list!"

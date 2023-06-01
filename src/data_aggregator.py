@@ -9,6 +9,7 @@ from typing import Literal, NamedTuple, get_args
 import numpy as np
 
 from .constants import CONSUMER_RECALL, SHORT_CONSUMER_RECALL
+from .stocks import get_company_sector
 
 
 @dataclasses.dataclass
@@ -18,6 +19,8 @@ class CompanyData:
     velocity_of_trend: float
     long_moving_average_stock_trend: float
     velocity_of_stock_trend: float
+    sector: str
+    name: str
 
 
 Month = Literal[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
@@ -27,8 +30,7 @@ Year = Literal[
 
 
 class Scalers(NamedTuple):
-    VelocityScaler: int = 10
-    LMAScaler: int = 100
+    LMAScaler: int = 10
 
 
 class DataAggregator:
@@ -36,10 +38,10 @@ class DataAggregator:
 
     def __init__(
         self,
+        *,
         stock_prices: str | dict[str, list[float]],
         opinions: str | dict[str, list[float]],
         stock_trends: str | dict[str, list[float]],
-        *,
         scalers: Scalers | None = None,
     ) -> None:
         self._scalers = scalers or Scalers()
@@ -69,11 +71,11 @@ class DataAggregator:
         opinions = self._opinions[company_symbol]
         stock_opinions = self._stock_opinions[company_symbol]
 
-        lma_trend = self.calculate_moving_average_trend(opinions)
-        lma_stock_trend = self.calculate_moving_average_trend(stock_opinions)
+        lma_trend = self.calculate_moving_average_trend(opinions, idx)
+        lma_stock_trend = self.calculate_moving_average_trend(stock_opinions, idx)
 
-        vel_trend = self.calculate_velocity(opinions)
-        vel_stock_trend = self.calculate_velocity(stock_opinions)
+        vel_trend = self.calculate_velocity(opinions, idx)
+        vel_stock_trend = self.calculate_velocity(stock_opinions, idx)
 
         return CompanyData(
             stock_price=stock_price,
@@ -81,26 +83,30 @@ class DataAggregator:
             long_moving_average_stock_trend=lma_stock_trend,
             velocity_of_trend=vel_trend,
             velocity_of_stock_trend=vel_stock_trend,
+            sector=get_company_sector(company_symbol),
+            name=company_symbol,
         )
 
     @staticmethod
     def create_date_index(month: Month, year: Year) -> str:
         return f"{year}-{month}"
 
-    def calculate_velocity(self, records: Sequence) -> float:
-        return np.tanh(
-            DataAggregator.calculate_moving_average(
-                records, memory=SHORT_CONSUMER_RECALL
-            )
-            / (
-                DataAggregator.calculate_moving_average(records, memory=CONSUMER_RECALL)
-                * self._scalers.VelocityScaler
-            )
+    @staticmethod
+    def calculate_velocity(records: Sequence, index: int) -> float:
+        long_ma = DataAggregator.calculate_moving_average(
+            records, index, memory=CONSUMER_RECALL
         )
 
-    def calculate_moving_average_trend(self, records: Sequence) -> float:
+        short_ma = DataAggregator.calculate_moving_average(
+            records, index, memory=SHORT_CONSUMER_RECALL
+        )
+
+        return np.tanh((short_ma - long_ma) / long_ma)
+
+    def calculate_moving_average_trend(self, records: Sequence, index: int) -> float:
         return (
-            DataAggregator.calculate_moving_average(records) / self._scalers.LMAScaler
+            DataAggregator.calculate_moving_average(records, index)
+            / self._scalers.LMAScaler
         )
 
     @staticmethod
@@ -146,4 +152,4 @@ class DataAggregator:
         records: Sequence, cursor: int, *, memory: int | None = None
     ):
         memory = memory or CONSUMER_RECALL
-        return np.mean(records[max(cursor - memory, 0) : cursor])
+        return np.mean(records[max(cursor - memory + 1, 0) : cursor + 1])
