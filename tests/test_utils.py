@@ -1,7 +1,11 @@
 import unittest
 from itertools import zip_longest
 
-from src.utils import calculate_next_date, create_month_year_generator
+from genetic_algorithm_stock_prediction.utils import (
+    calculate_next_date,
+    create_month_year_generator,
+    create_n_pairs_from_elements,
+)
 
 
 class TestUtilities(unittest.TestCase):
@@ -43,6 +47,8 @@ class TestUtilities(unittest.TestCase):
         cases = [
             [(10, 2010), 0, (10, 2010)],
             [(10, 2010), 12, (10, 2011)],
+            [(12, 2010), 12, (12, 2011)],
+            [(10, 2010), -12, (10, 2009)],
             [(10, 2010), 12 * 100, (10, 2110)],
         ]
 
@@ -50,3 +56,14 @@ class TestUtilities(unittest.TestCase):
             calculated = calculate_next_date(start_date, delta)
 
             self.assertEqual(calculated, expected)
+
+    def test_create_n_pairs_from_elements(self):
+        elements = [10, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+        produced = 100
+
+        pairs = create_n_pairs_from_elements(elements, produced)
+
+        for elem1, elem2 in pairs:
+            self.assertTrue(elem1 != elem2)
+            self.assertTrue(elem1 in elements)
+            self.assertTrue(elem2 in elements)

@@ -33,6 +33,10 @@ class Scalers(NamedTuple):
     LMAScaler: int = 10
 
 
+class DataAggregatorError(Exception):
+    ...
+
+
 class DataAggregator:
     DATE_PATTERN = re.compile(r"(?P<year>\d{4})-(?P<month>\d{2})")
 
@@ -67,9 +71,26 @@ class DataAggregator:
     ) -> CompanyData:
         idx = self.calculate_index(month, year)
 
-        stock_price = self._stock_price[company_symbol][idx]
-        opinions = self._opinions[company_symbol]
-        stock_opinions = self._stock_opinions[company_symbol]
+        try:
+            stock_price = self._stock_price[company_symbol][idx]
+        except KeyError as e:
+            raise DataAggregatorError(
+                f"Cannot find symbol: {company_symbol} in stock data"
+            ) from e
+
+        try:
+            opinions = self._opinions[company_symbol]
+        except KeyError as e:
+            raise DataAggregatorError(
+                f"Cannot find symbol: {company_symbol} in opinion data"
+            ) from e
+
+        try:
+            stock_opinions = self._stock_opinions[company_symbol]
+        except KeyError as e:
+            raise DataAggregatorError(
+                f"Cannot find symbol: {company_symbol} in stock opinion data"
+            ) from e
 
         lma_trend = self.calculate_moving_average_trend(opinions, idx)
         lma_stock_trend = self.calculate_moving_average_trend(stock_opinions, idx)

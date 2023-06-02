@@ -2,11 +2,17 @@ from typing import NamedTuple
 
 import numpy as np
 
-from bookkeeper import BookKeeper
-from stocks import Sectors, stocks_symbols
-
-from .constants import FIELDS_TO_MUTATE, LOG_LEVEL, MUTATION, NUMBER_OF_SECTORS
+from .bookkeeper import BookKeeper
+from .constants import (
+    DIVERSIFICATION_BONUS,
+    FIELDS_TO_MUTATE,
+    MUTATION,
+    MUTATION_FACTOR,
+    TRANSACTION_FEE,
+)
 from .data_aggregator import CompanyData, DataAggregator, Month, Year
+from .stocks import NUMBER_OF_SECTORS, NUMBER_OF_STOCKS, Sectors, stocks_symbols
+from .utils import create_n_pairs_from_elements
 
 
 class AgentInputs(NamedTuple):
@@ -29,8 +35,8 @@ class AgentInputs(NamedTuple):
             for sector, value in zip(Sectors, array[6 : 6 + NUMBER_OF_SECTORS])
         }
         company_biases = {
-            stock.name: value
-            for stock, value in zip(stocks_symbols, array[6 + NUMBER_OF_SECTORS])
+            stock_name: value
+            for stock_name, value in zip(stocks_symbols, array[6 + NUMBER_OF_SECTORS :])
         }
 
         return cls(
@@ -45,43 +51,49 @@ class AgentInputs(NamedTuple):
         )
 
     def to_flat(self) -> list[float]:
-        return [
-            self.courage,
-            self.amount_multiplier,
-            self.stock_trend_bias,
-            self.trend_bias,
-            self.stock_trend_velocity_bias,
-            self.trend_velocity_bias,
-            *self.sector_biases.values(),
-            *self.company_biases,
-        ]
+        return np.array(
+            [
+                self.courage,
+                self.amount_multiplier,
+                self.stock_trend_bias,
+                self.trend_bias,
+                self.stock_trend_velocity_bias,
+                self.trend_velocity_bias,
+                *self.sector_biases.values(),
+                *self.company_biases.values(),
+            ]
+        )
 
     @classmethod
     def init_random(cls) -> "AgentInputs":
-        return cls(*np.random.random_sample(8))
+        return cls.from_flat(
+            np.random.random_sample(6 + NUMBER_OF_SECTORS + NUMBER_OF_STOCKS)
+        )
 
     @classmethod
     def from_parents(
         cls, father_chromosomes: "AgentInputs", mother_chromosomes: "AgentInputs"
     ) -> "AgentInputs":
-        n_of_fields = len(father_arr)
+        father_arr = np.array(father_chromosomes.to_flat())
+        mother_arr = np.array(mother_chromosomes.to_flat())
 
-        father_arr = np.array(father_chromosomes)
-        mother_arr = np.array(mother_chromosomes)
+        n_of_fields = len(father_arr)
 
         child = (father_arr + mother_arr) / 2
 
         noise = np.random.random_sample(FIELDS_TO_MUTATE) * 2 - 1
         noise *= MUTATION
 
-        fields_to_change = np.choice(n_of_fields, FIELDS_TO_MUTATE, replace=False)
+        fields_to_change = np.random.choice(
+            n_of_fields, FIELDS_TO_MUTATE, replace=False
+        )
 
-        mutation = child(n_of_fields)
+        mutation = child.copy()
         mutation[fields_to_change] = noise
 
-        child = (child + mutation) / 2
+        child = child * (1 - MUTATION_FACTOR) + mutation * MUTATION_FACTOR
 
-        return cls(*child)
+        return cls.from_flat(child)
 
 
 class Agent:
@@ -112,7 +124,7 @@ class Agent:
         ...
 
     def run_month(self, month: Month, year: Year) -> None:
-        ...
+        print(f"Running month: {month} year: {year}")
 
     def _calculate_decision(self, company_data: CompanyData) -> float:
         weights = np.array(
@@ -130,10 +142,19 @@ class Agent:
     def show_stats(self):
         ...
 
+    def evaluate(self):
+        end_balance = self._bookkeeper.balance
+        diversification_bonus = (
+            self._bookkeeper.invested_companies * DIVERSIFICATION_BONUS
+        )
+
+        return end_balance + diversification_bonus
+
 
 class AgentBuilder:
     def __init__(
         self,
+        *,
         start_balance: int,
         min_transaction: int,
         max_transaction: int,
@@ -144,12 +165,26 @@ class AgentBuilder:
         self._max_transaction = max_transaction
         self._data_aggregator = data_aggregator
 
-    @staticmethod
-    def from_parents(parent1: Agent, parent2: Agent) -> Agent:
-        child_genes = AgentInputs.from_parents(parent1, parent2)
-        return Agent(child_genes)
+    def build(self, inputs: AgentInputs) -> Agent:
+        return Agent(
+            start_balance=self._start_balance,
+            min_transaction=self._min_transaction,
+            max_transaction=self._max_transaction,
+            data_aggregator=self._data_aggregator,
+            inputs=inputs,
+        )
 
-    @staticmethod
-    def initialize_random() -> Agent:
-        agent_genes = AgentInputs.init_random()
-        return Agent(agent_genes)
+    def from_parents(self, parent1: Agent, parent2: Agent) -> Agent:
+        child_genes = AgentInputs.from_parents(parent1, parent2)
+        return self.build(child_genes)
+
+    def initialize_random(self) -> Agent:
+        inputs = AgentInputs.init_random()
+        return self.build(inputs)
+
+    def create_generation_from_best_agents(
+        self, best_agents: list[Agent], no_of_agents: int
+    ):
+        pairs = create_n_pairs_from_elements(best_agents, no_of_agents)
+
+        return [self.from_parents(*parents) for parents in pairs]

@@ -2,14 +2,15 @@ import itertools
 import math
 import unittest
 
-from src.constants import (
+from genetic_algorithm_stock_prediction.constants import (
     CONSUMER_RECALL,
     SHORT_CONSUMER_RECALL,
-    STOCK_PRICES_CSV_PATH,
-    STOCK_TRENDS_CSV_PATH,
-    TRENDS_CSV_PATH,
+    DataAggregatorProps,
 )
-from src.data_aggregator import CompanyData, DataAggregator
+from genetic_algorithm_stock_prediction.data_aggregator import (
+    CompanyData,
+    DataAggregator,
+)
 
 
 class TestAggregator(unittest.TestCase):
@@ -50,9 +51,7 @@ class TestAggregator(unittest.TestCase):
             [("PFE", 8, 2021), 40.75],
             [("NWSA", 4, 2013), float("nan")],
         ]
-        da = DataAggregator(
-            STOCK_PRICES_CSV_PATH, TRENDS_CSV_PATH, STOCK_TRENDS_CSV_PATH
-        )
+        da = DataAggregator(**DataAggregatorProps)
 
         for case, expected in cases:
             data = da.get_company_data(*case)
