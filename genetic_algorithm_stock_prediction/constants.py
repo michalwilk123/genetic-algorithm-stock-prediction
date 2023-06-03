@@ -17,13 +17,16 @@ MUTATION = 0.3
 FIELDS_TO_MUTATE = 4
 MUTATION_FACTOR = 0.5
 
+COMPANY_BIAS_INFLUENCE = 0.3
+SECTOR_BIAS_INFLUENCE = 0.2
+
 SimulationProps = {
-    "number_of_agents": 10,
-    "agent_life_expectancy": 1 * 12,
+    "number_of_agents": 200,
+    "agent_life_expectancy": 2 * 12,
     "delta": 6,
-    "num_of_best_candidates": 4,
+    "num_of_best_candidates": 40,
     "start_date": (6, 2010),
-    "end_date": (6, 2012),
+    "end_date": (1, 2023),
 }
 
 

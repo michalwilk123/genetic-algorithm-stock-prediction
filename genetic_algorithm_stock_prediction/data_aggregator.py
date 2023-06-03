@@ -64,19 +64,17 @@ class DataAggregator:
         else:
             self._stock_opinions = stock_trends
 
-    def is_stock_price_available(self, company_symbol:str, month: Month, year: Year):
+    def is_stock_price_available(self, company_symbol: str, month: Month, year: Year):
         idx = self.calculate_index(month, year)
 
         if idx > len(self._stock_price[company_symbol]):
-            raise DataAggregatorError(
-                "Cannot find relevant data from this time"
-            )
+            raise DataAggregatorError("Cannot find relevant data from this time")
 
         stock_price = self._stock_price[company_symbol][idx]
 
         return not math.isnan(stock_price)
 
-    def check_data_availability(self, symbol:str):
+    def check_data_availability(self, symbol: str):
         tpl = "Cannot find symbol: {symbol} in {data_source}"
 
         if not symbol in self._stock_price:
@@ -105,7 +103,6 @@ class DataAggregator:
         stock_price = self._stock_price[company_symbol][idx]
         opinions = self._opinions[company_symbol]
         stock_opinions = self._stock_opinions[company_symbol]
-
 
         lma_trend = self.calculate_moving_average_trend(opinions, idx)
         lma_stock_trend = self.calculate_moving_average_trend(stock_opinions, idx)

@@ -1,6 +1,7 @@
 from genetic_algorithm_stock_prediction.agent import Agent
 from genetic_algorithm_stock_prediction.constants import SimulationProps
 from genetic_algorithm_stock_prediction.model import StockGeneticAlgorithmModel
+from genetic_algorithm_stock_prediction.utils import create_month_year_generator, calculate_next_date
 
 
 def display_best_children_stats(children: list[Agent]):
@@ -13,12 +14,16 @@ def run():
     model.initialize()
 
     model.run_training()
+    model.show_agents_summary()
 
-    best_agents = model.get_best_agents()
+    best_agent = model.get_best_agents()[0]
+    current_date = (5,2023)
 
-    model.create_best_agents_summary()
+    for month, year in create_month_year_generator(calculate_next_date(current_date, -SimulationProps["delta"]), current_date):
+        best_agent.run_month(month, year)
 
-    report = best_agents[0].get_report()
-    print("BEST AGENT")
+    best_agent.close_positions(*current_date)
+    report = best_agent.get_report()
+
+    print("BEST AGENT:")
     print(report)
-

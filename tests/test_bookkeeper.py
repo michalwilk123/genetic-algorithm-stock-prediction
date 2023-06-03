@@ -4,9 +4,14 @@ from genetic_algorithm_stock_prediction.bookkeeper import (
     BookKeeper,
     BookKeeperException,
 )
-from genetic_algorithm_stock_prediction.constants import DataAggregatorProps
-from genetic_algorithm_stock_prediction.data_aggregator import DataAggregator, DataAggregatorError
-from genetic_algorithm_stock_prediction.constants import TRANSACTION_FEE
+from genetic_algorithm_stock_prediction.constants import (
+    TRANSACTION_FEE,
+    DataAggregatorProps,
+)
+from genetic_algorithm_stock_prediction.data_aggregator import (
+    DataAggregator,
+    DataAggregatorError,
+)
 
 data_aggregator = DataAggregator(**DataAggregatorProps)
 
@@ -23,7 +28,7 @@ class TestBookkeeper(unittest.TestCase):
         bookkeeper.make_transaction(-1000, "VWAGY", 7, 2015)
 
         self.assertEqual(bookkeeper.number_of_transactions, 5)
-        self.assertEqual(bookkeeper.invested_companies, 3)
+        self.assertEqual(bookkeeper.number_of_invested_companies, 3)
         self.assertEqual(bookkeeper.balance, 10_000 - 1110.5 - 4 * TRANSACTION_FEE)
 
     def test_should_not_allow_selling_not_owned_stock(self):
@@ -86,11 +91,11 @@ class TestBookkeeper(unittest.TestCase):
 
     def test_calculate_position(self):
         cases = [
-            [[(6, 2010), (8,2010)], [10, 60], -30],
-            [[(6, 2010), (8,2010)], [10, 6000], -3000],
-            [[(6, 2010), (7,2010), (8,2010)], [10, 1000, -1000], 1500],
+            [[(6, 2010), (8, 2010)], [10, 60], -30],
+            [[(6, 2010), (8, 2010)], [10, 6000], -3000],
+            [[(6, 2010), (7, 2010), (8, 2010)], [10, 1000, -1000], 1500],
         ]
-        end_date = (9,2010)
+        end_date = (9, 2010)
         mocked_aggregator = {
             "stock_prices": {"GOOGL": [100, 50, 200, 100]},
             "opinions": {"GOOGL": []},
@@ -103,7 +108,7 @@ class TestBookkeeper(unittest.TestCase):
 
             for amount, date in zip(transaction_amounts, transaction_dates):
                 bookkeeper.make_transaction(amount, "GOOGL", *date)
-            
+
             bookkeeper.close_position(*end_date)
             position = bookkeeper.balance
             end_profit = position - 10_000 + 2 * TRANSACTION_FEE

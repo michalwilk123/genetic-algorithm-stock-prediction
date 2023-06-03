@@ -1,0 +1,138 @@
+
+SUMMARY OF TRAINING: 
+Epochs: 23 ; Agents per generation: 200 
+Best per generation: 40 ; Time to train: 56.21
+==================================================================
+
+
+GENERATION: INITIAL START DATE: (6, 2010) END DATE: (6, 2012): 
+==================================================================
+Best Agent:
+AgentReport(profit=7628.392562313013, number_of_transactions=3, average_transaction_amount=9202.797520771004, multiplier=0.8023355615813145, courage=0.7431240793202325, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.6163940775138916, 'TECHNOLOGY': 0.6016488545013605, 'BANKING': 0.1488453442885802, 'HEALTHCARE': 0.9051765077908226, 'ENERGY': 0.2536943494090247, 'FOOD': 0.0625941645519551, 'TELECOMUNICATION': 0.17244971092469552, 'SOFTWARE': 0.7443657549044317, 'MEDIA': 0.47171706439551575, 'RETAIL': 0.8001433833709332}, favourite_stocks={'AMZN': 9980})
+==================================================================
+
+GENERATION: 1 START DATE: (6, 2010) END DATE: (6, 2012): 
+==================================================================
+Best Agent:
+AgentReport(profit=7394.587315963705, number_of_transactions=19, average_transaction_amount=2518.878156117869, multiplier=0.8210467837432457, courage=0.19645701108562752, invested_companies=7, sector_biases={'AUTOMOTIVE': 0.36996947774011507, 'TECHNOLOGY': 0.747698726517148, 'BANKING': 0.4789441289463278, 'HEALTHCARE': 0.14914452476614604, 'ENERGY': 0.44787795244148687, 'FOOD': 0.3018229823487593, 'TELECOMUNICATION': 0.5087082661166511, 'SOFTWARE': 0.24592480251198612, 'MEDIA': 0.6514353472979958, 'RETAIL': 0.27966193138775}, favourite_stocks={'AMZN': 6424, 'SMSN.IL': 4002, 'BAC': 2853.75524365417, 'AAPL': 1897, 'TTE': 1795, 'GBX': 1685, 'PFE': 1530.2935814837335})
+==================================================================
+
+GENERATION: 2 START DATE: (12, 2010) END DATE: (12, 2012): 
+==================================================================
+Best Agent:
+AgentReport(profit=8693.255387025049, number_of_transactions=24, average_transaction_amount=1791.6125460328687, multiplier=0.34446088805169195, courage=0.2925569038453152, invested_companies=5, sector_biases={'AUTOMOTIVE': 0.4923022614680888, 'TECHNOLOGY': 0.4471076247979445, 'BANKING': 0.40063343188066214, 'HEALTHCARE': 0.5336419714084271, 'ENERGY': 0.3672243312626817, 'FOOD': 0.4258570147592962, 'TELECOMUNICATION': 0.39771061484023823, 'SOFTWARE': 0.42347961825602587, 'MEDIA': 0.38455161019131645, 'RETAIL': 0.40108295830713886}, favourite_stocks={'GM': 4266.132170627389, 'NFLX': 4015, 'BAYN.DE': 3834.0, 'CVX': 3731.5906882545123, 'DIS': 1231})
+==================================================================
+
+GENERATION: 3 START DATE: (6, 2011) END DATE: (6, 2013): 
+==================================================================
+Best Agent:
+AgentReport(profit=38725.370595647204, number_of_transactions=32, average_transaction_amount=3338.3044096818976, multiplier=0.6078988345907197, courage=0.38305403101384516, invested_companies=5, sector_biases={'AUTOMOTIVE': 0.13265819384006788, 'TECHNOLOGY': 0.5480844745549687, 'BANKING': 0.34585253871798277, 'HEALTHCARE': 0.3030342481353373, 'ENERGY': 0.31927754366777567, 'FOOD': 0.38264916587566095, 'TELECOMUNICATION': 0.4638492360126717, 'SOFTWARE': 0.3803875377654021, 'MEDIA': 0.555299772510017, 'RETAIL': 0.4568491441475284}, favourite_stocks={'CVX': 10783.011820579832, 'TTE': 10512.661053438987, 'NFLX': 9989.38785835995, 'BAYN.DE': 2537, 'PFE': 143.12452470799326})
+==================================================================
+
+GENERATION: 4 START DATE: (12, 2011) END DATE: (12, 2013): 
+==================================================================
+Best Agent:
+AgentReport(profit=46495.39418039576, number_of_transactions=22, average_transaction_amount=4690.016913711351, multiplier=0.6124768662400812, courage=0.4016632424307321, invested_companies=4, sector_biases={'AUTOMOTIVE': 0.31958436238323096, 'TECHNOLOGY': 0.3869264135540572, 'BANKING': 0.15187909706769762, 'HEALTHCARE': 0.2437825487690248, 'ENERGY': 0.35164705385886197, 'FOOD': 0.3916400159068635, 'TELECOMUNICATION': 0.4179574140296669, 'SOFTWARE': 0.38630251336450805, 'MEDIA': 0.5104764951245981, 'RETAIL': 0.44990336515174495}, favourite_stocks={'TTE': 15601.076621949283, 'NFLX': 7919, 'CVS': 2575, 'PFE': 2182.4123386776987})
+==================================================================
+
+GENERATION: 5 START DATE: (6, 2012) END DATE: (6, 2014): 
+==================================================================
+Best Agent:
+AgentReport(profit=14661.727305299391, number_of_transactions=33, average_transaction_amount=2067.6789567165815, multiplier=0.46958463870382056, courage=0.34492915148676634, invested_companies=11, sector_biases={'AUTOMOTIVE': 0.5048606037836918, 'TECHNOLOGY': 0.3702111346835605, 'BANKING': 0.2560672645894044, 'HEALTHCARE': 0.48704953501199266, 'ENERGY': 0.3251898641245568, 'FOOD': 0.3721131665597231, 'TELECOMUNICATION': 0.3858788133442599, 'SOFTWARE': 0.48181899496346264, 'MEDIA': 0.3733105677089039, 'RETAIL': 0.38639094856788386}, favourite_stocks={'TMUS': 5079, 'META': 4842.438416272998, 'CVS': 2806, 'BAYN.DE': 2360, 'MCD': 1917, 'NFLX': 1795, 'MDLZ': 1744.0, 'GM': 1629, 'KO': 1549.7729351085175, 'SAN': 1493.2561915173874, 'SONY': 1490.371590274997})
+==================================================================
+
+GENERATION: 6 START DATE: (12, 2012) END DATE: (12, 2014): 
+==================================================================
+Best Agent:
+AgentReport(profit=13646.745890747537, number_of_transactions=36, average_transaction_amount=1671.3096391977606, multiplier=0.46477008363680195, courage=0.2920142155060559, invested_companies=12, sector_biases={'AUTOMOTIVE': 0.3725714813327224, 'TECHNOLOGY': 0.4054554239394278, 'BANKING': 0.27936813233676483, 'HEALTHCARE': 0.6404929297987847, 'ENERGY': 0.4025005002240303, 'FOOD': 0.2563055329268469, 'TELECOMUNICATION': 0.3944328336684555, 'SOFTWARE': 0.24808308423855016, 'MEDIA': 0.3790726766050494, 'RETAIL': 0.38317196860039193}, favourite_stocks={'CVS': 4795.227470360663, 'GBX': 3403, 'META': 3102, 'SONY': 2754.6900050574204, 'NOK': 1854.0, 'MCD': 1771, 'NFLX': 1551, 'TMUS': 1456.0, 'KO': 916.954393902234, 'VZ': 606.8841234970315, 'BAYN.DE': 528.2209338903907, 'CVX': 426.22363347817964})
+==================================================================
+
+GENERATION: 7 START DATE: (6, 2013) END DATE: (6, 2015): 
+==================================================================
+Best Agent:
+AgentReport(profit=6160.271099910904, number_of_transactions=7, average_transaction_amount=3730.0387285587008, multiplier=0.4785000873418292, courage=0.416964673533264, invested_companies=2, sector_biases={'AUTOMOTIVE': 0.30140864837958103, 'TECHNOLOGY': 0.37695753746360516, 'BANKING': 0.26402025167764714, 'HEALTHCARE': 0.26953914010031876, 'ENERGY': 0.3698442619577542, 'FOOD': 0.3140761234882917, 'TELECOMUNICATION': 0.3510368498046878, 'SOFTWARE': 0.34706403124101176, 'MEDIA': 0.41117928221682076, 'RETAIL': 0.37860481426264797}, favourite_stocks={'CVS': 7028, 'AMZN': 2922})
+==================================================================
+
+GENERATION: 8 START DATE: (12, 2013) END DATE: (12, 2015): 
+==================================================================
+Best Agent:
+AgentReport(profit=7783.9991698821395, number_of_transactions=7, average_transaction_amount=3961.9998814117343, multiplier=0.48384232289084017, courage=0.42823519451364667, invested_companies=2, sector_biases={'AUTOMOTIVE': 0.36183143847515664, 'TECHNOLOGY': 0.36175724459095104, 'BANKING': 0.2506412163317536, 'HEALTHCARE': 0.41379970140101374, 'ENERGY': 0.36007345928193735, 'FOOD': 0.3024325572415986, 'TELECOMUNICATION': 0.38433289630443235, 'SOFTWARE': 0.3923728826845391, 'MEDIA': 0.38401701322937, 'RETAIL': 0.3853274221129551}, favourite_stocks={'AMZN': 5079, 'CVS': 4871})
+==================================================================
+
+GENERATION: 9 START DATE: (6, 2014) END DATE: (6, 2016): 
+==================================================================
+Best Agent:
+AgentReport(profit=11559.284524573603, number_of_transactions=6, average_transaction_amount=5251.547420762267, multiplier=0.49400689971427525, courage=0.3758187191540675, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.2857117715228788, 'TECHNOLOGY': 0.28982951810633695, 'BANKING': 0.21890469318987266, 'HEALTHCARE': 0.6252422511440517, 'ENERGY': 0.3864943305414479, 'FOOD': 0.30675695703996814, 'TELECOMUNICATION': 0.34149505778410644, 'SOFTWARE': 0.38035794836248105, 'MEDIA': 0.42622721495521987, 'RETAIL': 0.35722391487040134}, favourite_stocks={'AMZN': 9950})
+==================================================================
+
+GENERATION: 10 START DATE: (12, 2014) END DATE: (12, 2016): 
+==================================================================
+Best Agent:
+AgentReport(profit=10815.362912562032, number_of_transactions=6, average_transaction_amount=5127.560485427005, multiplier=0.4908393974706506, courage=0.3712724507514245, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.2084936493975597, 'TECHNOLOGY': 0.30413878834760916, 'BANKING': 0.23158517353025462, 'HEALTHCARE': 0.25461292528375457, 'ENERGY': 0.37863064825047565, 'FOOD': 0.28342153706245565, 'TELECOMUNICATION': 0.40084198192534376, 'SOFTWARE': 0.3273387743613825, 'MEDIA': 0.3880574348386815, 'RETAIL': 0.35907324755072256}, favourite_stocks={'AMZN': 9950})
+==================================================================
+
+GENERATION: 11 START DATE: (6, 2015) END DATE: (6, 2017): 
+==================================================================
+Best Agent:
+AgentReport(profit=9162.791215982441, number_of_transactions=6, average_transaction_amount=4852.1318693304065, multiplier=0.4906372009479675, courage=0.38816289225346823, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.3093624966135511, 'TECHNOLOGY': 0.336073592132478, 'BANKING': 0.23912888661599668, 'HEALTHCARE': 0.421922912124394, 'ENERGY': 0.38232148940995253, 'FOOD': 0.2664116568879943, 'TELECOMUNICATION': 0.3600871982594289, 'SOFTWARE': 0.2550286173907713, 'MEDIA': 0.3624443613558179, 'RETAIL': 0.3595327097833442}, favourite_stocks={'AMZN': 9950})
+==================================================================
+
+GENERATION: 12 START DATE: (12, 2015) END DATE: (12, 2017): 
+==================================================================
+Best Agent:
+AgentReport(profit=12087.639896029192, number_of_transactions=10, average_transaction_amount=3656.791774871794, multiplier=0.48928543317239137, courage=0.3801865683154997, invested_companies=2, sector_biases={'AUTOMOTIVE': 0.22480167654404618, 'TECHNOLOGY': 0.29697459897247225, 'BANKING': 0.2368435080430495, 'HEALTHCARE': 0.4357244351745057, 'ENERGY': 0.3843039942041411, 'FOOD': 0.2781645894087261, 'TELECOMUNICATION': 0.371848916174504, 'SOFTWARE': 0.28868466796127773, 'MEDIA': 0.3805934130345101, 'RETAIL': 0.35770506825069315}, favourite_stocks={'AMZN': 10223.138926344374, 'UNH': 1982})
+==================================================================
+
+GENERATION: 13 START DATE: (6, 2016) END DATE: (6, 2018): 
+==================================================================
+Best Agent:
+AgentReport(profit=11645.735530968777, number_of_transactions=7, average_transaction_amount=4512.2479329955395, multiplier=0.48280017255829816, courage=0.37565563511315136, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.25961144002411773, 'TECHNOLOGY': 0.0015923147994796605, 'BANKING': 0.17861474976382652, 'HEALTHCARE': 0.4473768948396703, 'ENERGY': 0.31193092085577573, 'FOOD': 0.2895754458206553, 'TELECOMUNICATION': 0.3421437349929965, 'SOFTWARE': 0.3428396225099486, 'MEDIA': 0.18282542910706814, 'RETAIL': 0.35004022809967783}, favourite_stocks={'AMZN': 9940})
+==================================================================
+
+GENERATION: 14 START DATE: (12, 2016) END DATE: (12, 2018): 
+==================================================================
+Best Agent:
+AgentReport(profit=6802.590885713482, number_of_transactions=7, average_transaction_amount=3820.3701265304976, multiplier=0.47902564591850805, courage=0.38220904635619124, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.26884845137594826, 'TECHNOLOGY': 0.11672488669674094, 'BANKING': 0.2013549881523538, 'HEALTHCARE': 0.4530262363271683, 'ENERGY': 0.2911520612251317, 'FOOD': 0.27686417935741614, 'TELECOMUNICATION': 0.3363708842007487, 'SOFTWARE': 0.34202844637718466, 'MEDIA': 0.0986525597044978, 'RETAIL': 0.3529661730721624}, favourite_stocks={'AMZN': 9940})
+==================================================================
+
+GENERATION: 15 START DATE: (6, 2017) END DATE: (6, 2019): 
+==================================================================
+Best Agent:
+AgentReport(profit=3907.506646715232, number_of_transactions=14, average_transaction_amount=1858.1076253340839, multiplier=0.47693479755715673, courage=0.21407665307060958, invested_companies=5, sector_biases={'AUTOMOTIVE': 0.2757932375867299, 'TECHNOLOGY': 0.2744377175224516, 'BANKING': 0.22774108240988356, 'HEALTHCARE': 0.4408059678991152, 'ENERGY': 0.2843931989764762, 'FOOD': 0.26999681909021345, 'TELECOMUNICATION': 0.3390671488290318, 'SOFTWARE': 0.3316088696338498, 'MEDIA': 0.3869012440968729, 'RETAIL': 0.35513197725756285}, favourite_stocks={'MCD': 2903, 'AMZN': 2656.00005398097, 'AAPL': 2341, 'GOOGL': 2071, 'TMUS': 1037})
+==================================================================
+
+GENERATION: 16 START DATE: (12, 2017) END DATE: (12, 2019): 
+==================================================================
+Best Agent:
+AgentReport(profit=4901.136587095969, number_of_transactions=7, average_transaction_amount=3548.7337981565674, multiplier=0.47929709413257865, courage=0.3814342128505153, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.2667254507553529, 'TECHNOLOGY': 0.18920514771868624, 'BANKING': 0.15655636689108765, 'HEALTHCARE': 0.44610872514269123, 'ENERGY': 0.28248782086880386, 'FOOD': 0.27740178684999506, 'TELECOMUNICATION': 0.2842059117120255, 'SOFTWARE': 0.3453964374060639, 'MEDIA': 0.25864129451173823, 'RETAIL': 0.29501524424236525}, favourite_stocks={'AMZN': 9940})
+==================================================================
+
+GENERATION: 17 START DATE: (6, 2018) END DATE: (6, 2020): 
+==================================================================
+Best Agent:
+AgentReport(profit=9171.21146040873, number_of_transactions=6, average_transaction_amount=4853.535243401455, multiplier=0.48398043457539913, courage=0.3173270019756197, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.15896606144809505, 'TECHNOLOGY': 0.18104345096117186, 'BANKING': 0.12831592178001006, 'HEALTHCARE': 0.40630540396904763, 'ENERGY': 0.2969340546671865, 'FOOD': 0.16091182696620265, 'TELECOMUNICATION': 0.34430210548429924, 'SOFTWARE': 0.34072949138042563, 'MEDIA': 0.2963929222217496, 'RETAIL': 0.34897970336412554}, favourite_stocks={'AMZN': 9950})
+==================================================================
+
+GENERATION: 18 START DATE: (12, 2018) END DATE: (12, 2020): 
+==================================================================
+Best Agent:
+AgentReport(profit=9330.132330492488, number_of_transactions=13, average_transaction_amount=2250.0101792686532, multiplier=0.48284623629372125, courage=0.18401460410199647, invested_companies=5, sector_biases={'AUTOMOTIVE': 0.12353162750783712, 'TECHNOLOGY': 0.20087965416096476, 'BANKING': 0.1671028647863198, 'HEALTHCARE': 0.41241565055513707, 'ENERGY': 0.2835329616117155, 'FOOD': 0.22179776030740672, 'TELECOMUNICATION': 0.29600061356019297, 'SOFTWARE': 0.34031674601410344, 'MEDIA': 0.3170410867355526, 'RETAIL': 0.3496489289208957}, favourite_stocks={'AMZN': 3218, 'AAPL': 2385, 'CVS': 2100, 'MCD': 1262, 'MSFT': 955})
+==================================================================
+
+GENERATION: 19 START DATE: (6, 2019) END DATE: (6, 2021): 
+==================================================================
+Best Agent:
+AgentReport(profit=8008.0527373585355, number_of_transactions=7, average_transaction_amount=3992.578962479791, multiplier=0.4139861213063327, courage=0.32732877655336334, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.20557428974239095, 'TECHNOLOGY': 0.21596231843491198, 'BANKING': 0.18052608754516744, 'HEALTHCARE': 0.40972628801448074, 'ENERGY': 0.010016972938792168, 'FOOD': 0.21021526954646705, 'TELECOMUNICATION': 0.33489957442129104, 'SOFTWARE': 0.3199487551487422, 'MEDIA': 0.27459642488974, 'RETAIL': 0.34898570082380054}, favourite_stocks={'AMZN': 9940})
+==================================================================
+
+GENERATION: 20 START DATE: (12, 2019) END DATE: (12, 2021): 
+==================================================================
+Best Agent:
+AgentReport(profit=3769.1143742356435, number_of_transactions=21, average_transaction_amount=1259.213934657854, multiplier=0.38347452863900616, courage=0.09707113531186845, invested_companies=6, sector_biases={'AUTOMOTIVE': 0.20081798026419984, 'TECHNOLOGY': 0.18291289111125242, 'BANKING': 0.17939973835053075, 'HEALTHCARE': 0.3383970932132757, 'ENERGY': 0.07549249349655592, 'FOOD': 0.22260898696096953, 'TELECOMUNICATION': 0.27093698279009715, 'SOFTWARE': 0.2397425275479204, 'MEDIA': 0.26964733668646157, 'RETAIL': 0.34837785679390443}, favourite_stocks={'CVS': 3656.1891267896485, 'AMZN': 3173, 'MCD': 1867, 'AAPL': 1230, 'TTE': 763, 'BP': 578})
+==================================================================
+
+GENERATION: 21 START DATE: (6, 2020) END DATE: (6, 2022): 
+==================================================================
+Best Agent:
+AgentReport(profit=3956.0263567223847, number_of_transactions=29, average_transaction_amount=1204.5652616705454, multiplier=0.40380201344652583, courage=0.2244681610781811, invested_companies=10, sector_biases={'AUTOMOTIVE': 0.17615753702549586, 'TECHNOLOGY': 0.19475439482360196, 'BANKING': 0.19430458651016735, 'HEALTHCARE': 0.21403464550729262, 'ENERGY': 0.25119145860706626, 'FOOD': 0.2119537404744795, 'TELECOMUNICATION': 0.22456414234864255, 'SOFTWARE': 0.32098086036225804, 'MEDIA': 0.2549066214982796, 'RETAIL': 0.3348217214507651}, favourite_stocks={'BP': 4731, 'MCD': 3518.6514950960036, 'MDLZ': 2066, 'IBM': 1237, 'CRM': 1101, 'COST': 965.0, 'UNH': 929, 'AMZN': 482.57520929262864, 'WMT': 227.15279603309727, 'TGT': 145.80361543998546})
+==================================================================
