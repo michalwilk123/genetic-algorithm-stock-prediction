@@ -52,6 +52,9 @@ class StockGeneticAlgorithmModel:
         results = [agent.evaulate() for agent in self._agents]
         self._results.append(results)
 
+        for agent in self._agents:
+            agent.close_positions(*end)
+
         best_candidates = sorted(self._agents, key=lambda agent: agent.evaluate())[
             : self._num_of_best_candidates : -1
         ]
@@ -75,3 +78,6 @@ class StockGeneticAlgorithmModel:
                 continue
 
             current_delta += 1
+
+    def create_best_agents_summary(self):
+        raise NotImplementedError

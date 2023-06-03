@@ -1,5 +1,5 @@
 import csv
-import dataclasses
+import math
 import re
 from collections import defaultdict
 from collections.abc import Sequence
@@ -12,8 +12,7 @@ from .constants import CONSUMER_RECALL, SHORT_CONSUMER_RECALL
 from .stocks import get_company_sector
 
 
-@dataclasses.dataclass
-class CompanyData:
+class CompanyData(NamedTuple):
     stock_price: float
     long_moving_average_trend: float
     velocity_of_trend: float
@@ -65,32 +64,48 @@ class DataAggregator:
         else:
             self._stock_opinions = stock_trends
 
+    def is_stock_price_available(self, company_symbol:str, month: Month, year: Year):
+        idx = self.calculate_index(month, year)
+
+        if idx > len(self._stock_price[company_symbol]):
+            raise DataAggregatorError(
+                "Cannot find relevant data from this time"
+            )
+
+        stock_price = self._stock_price[company_symbol][idx]
+
+        return not math.isnan(stock_price)
+
+    def check_data_availability(self, symbol:str):
+        tpl = "Cannot find symbol: {symbol} in {data_source}"
+
+        if not symbol in self._stock_price:
+            raise DataAggregatorError(
+                tpl.format(symbol=symbol, data_source="stock price data")
+            )
+
+        if not symbol in self._opinions:
+            raise DataAggregatorError(
+                tpl.format(symbol=symbol, data_source="opinions data")
+            )
+
+        if not symbol in self._stock_opinions:
+            raise DataAggregatorError(
+                tpl.format(symbol=symbol, data_source="stock opinions data")
+            )
+
     @lru_cache(maxsize=1024)
     def get_company_data(
         self, company_symbol: str, month: Month, year: Year
     ) -> CompanyData:
         idx = self.calculate_index(month, year)
 
-        try:
-            stock_price = self._stock_price[company_symbol][idx]
-        except KeyError as e:
-            raise DataAggregatorError(
-                f"Cannot find symbol: {company_symbol} in stock data"
-            ) from e
+        self.check_data_availability(company_symbol)
 
-        try:
-            opinions = self._opinions[company_symbol]
-        except KeyError as e:
-            raise DataAggregatorError(
-                f"Cannot find symbol: {company_symbol} in opinion data"
-            ) from e
+        stock_price = self._stock_price[company_symbol][idx]
+        opinions = self._opinions[company_symbol]
+        stock_opinions = self._stock_opinions[company_symbol]
 
-        try:
-            stock_opinions = self._stock_opinions[company_symbol]
-        except KeyError as e:
-            raise DataAggregatorError(
-                f"Cannot find symbol: {company_symbol} in stock opinion data"
-            ) from e
 
         lma_trend = self.calculate_moving_average_trend(opinions, idx)
         lma_stock_trend = self.calculate_moving_average_trend(stock_opinions, idx)
@@ -146,6 +161,7 @@ class DataAggregator:
 
     @staticmethod
     def calculate_index(month: Month, year: Year) -> int:
+        # TODO: allow setting start month in the constructor
         return get_args(Year).index(year) * 12 + get_args(Month).index(month) - 5
 
     @staticmethod

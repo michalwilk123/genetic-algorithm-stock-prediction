@@ -1,7 +1,8 @@
 import unittest
 
-from genetic_algorithm_stock_prediction.agent import AgentInputs
-from genetic_algorithm_stock_prediction.constants import FIELDS_TO_MUTATE
+from genetic_algorithm_stock_prediction.agent import AgentBuilder, AgentInputs
+from genetic_algorithm_stock_prediction.constants import FIELDS_TO_MUTATE, AgentBuilderProps, DataAggregatorProps
+from genetic_algorithm_stock_prediction.data_aggregator import DataAggregator
 
 
 class TestAgentInputs(unittest.TestCase):
@@ -31,3 +32,14 @@ class TestAgentInputs(unittest.TestCase):
         converted = AgentInputs.from_flat(representation)
 
         self.assertEqual(converted, inputs)
+
+class TestAgent(unittest.TestCase):
+    def test_happy_path(self):
+        data_aggregator = DataAggregator(**DataAggregatorProps)
+        agent_builder = AgentBuilder(**AgentBuilderProps, data_aggregator=data_aggregator)
+        agent = agent_builder.initialize_random()
+
+        agent.run_month(10, 2020)
+
+        agent.close_positions()
+        score = agent.evaluate()

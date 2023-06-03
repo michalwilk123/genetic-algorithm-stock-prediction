@@ -16,4 +16,9 @@ def run():
 
     best_agents = model.get_best_agents()
 
-    display_best_children_stats(best_agents)
+    model.create_best_agents_summary()
+
+    report = best_agents[0].get_report()
+    print("BEST AGENT")
+    print(report)
+

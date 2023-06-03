@@ -1,3 +1,4 @@
+import dataclasses
 from typing import NamedTuple
 
 import numpy as np
@@ -8,12 +9,14 @@ from .constants import (
     FIELDS_TO_MUTATE,
     MUTATION,
     MUTATION_FACTOR,
-    TRANSACTION_FEE,
 )
 from .data_aggregator import CompanyData, DataAggregator, Month, Year
-from .stocks import NUMBER_OF_SECTORS, NUMBER_OF_STOCKS, Sectors, stocks_symbols
+from .stocks import NUMBER_OF_SECTORS, NUMBER_OF_STOCKS, Sectors, stocks_symbols, get_randomized_stock_list
 from .utils import create_n_pairs_from_elements
 
+@dataclasses.dataclass
+class AgentReport:
+    ...
 
 class AgentInputs(NamedTuple):
     courage: float
@@ -117,32 +120,49 @@ class Agent:
     def inputs(self):
         return self._inputs
 
-    def create_genes(self):
-        ...
-
-    def fitness(self):
-        ...
-
     def run_month(self, month: Month, year: Year) -> None:
-        print(f"Running month: {month} year: {year}")
+        companies = get_randomized_stock_list()
+
+        for symbol in companies:
+            company_data = self._data_aggregator.get_company_data(symbol, month, year)
+            decision = self._calculate_decision(company_data)
+
+            if abs(decision) > self._inputs.courage:
+                amount = decision * self._inputs.amount_multiplier * self._start_balance
+
+                self._bookkeeper.make_transaction(amount, symbol, month, year)
+                
+    @staticmethod
+    def _normalize_bias(bias:float) -> float:
+        return bias * 2 - 1
 
     def _calculate_decision(self, company_data: CompanyData) -> float:
+
         weights = np.array(
             [
+                company_data.long_moving_average_trend * self._normalize_bias(self._inputs.trend_bias),
                 company_data.long_moving_average_stock_trend
-                * self._inputs.stock_trend_bias,
-                company_data.long_moving_average_trend * self._inputs.trend_bias,
-                company_data.name * self._inputs.trend_bias,
+                * self._normalize_bias(self._inputs.stock_trend_bias),
+                company_data.velocity_of_trend * self._normalize_bias(self._inputs.trend_velocity_bias),
+                company_data.velocity_of_stock_trend * self._normalize_bias(self._inputs.stock_trend_velocity_bias),
             ]
         )
 
         decision = np.tanh(np.sum(weights))
+        decision += self._normalize_bias(self._inputs.company_biases[company_data.name])
+        decision += self._normalize_bias(self._inputs.sector_biases[company_data.sector.name])
+
+        decision /= 3
+
         return decision
 
-    def show_stats(self):
-        ...
+    def get_report(self) -> AgentReport:
+        raise NotImplementedError
 
-    def evaluate(self):
+    def close_positions(self, month:Month, year:Year) -> None:
+        self._bookkeeper.close_position(month, year)
+
+    def evaluate(self) -> float:
         end_balance = self._bookkeeper.balance
         diversification_bonus = (
             self._bookkeeper.invested_companies * DIVERSIFICATION_BONUS

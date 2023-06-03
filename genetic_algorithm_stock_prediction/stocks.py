@@ -27,7 +27,7 @@ chosen_stocks: dict[Sectors, list[str]] = {
     Sectors.TECHNOLOGY: [
         "SMSN.IL",  # samsung
         "AAPL",  # apple
-        "AMD",  # amd
+        "SONY",  # sony
         "INTC",  # intel
         "NVDA",  # nvidia
     ],
@@ -100,7 +100,7 @@ def create_stock_generator() -> Generator[tuple[Sectors, str], None, None]:
 
 
 def get_randomized_stock_list() -> list[tuple[Sectors, str]]:
-    stocks = [it for it in create_stock_generator()]
+    stocks = [it[1] for it in create_stock_generator()]
     random.shuffle(stocks)
     return stocks
 
