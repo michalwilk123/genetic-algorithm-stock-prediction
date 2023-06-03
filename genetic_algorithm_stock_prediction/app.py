@@ -1,17 +1,11 @@
 from pprint import pprint
 
-from genetic_algorithm_stock_prediction.agent import Agent
 from genetic_algorithm_stock_prediction.constants import SimulationProps
 from genetic_algorithm_stock_prediction.model import StockGeneticAlgorithmModel
 from genetic_algorithm_stock_prediction.utils import (
     calculate_next_date,
     create_month_year_generator,
 )
-
-
-def display_best_children_stats(children: list[Agent]):
-    for agent in children:
-        agent.show_stats()
 
 
 def run():

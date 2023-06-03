@@ -1,15 +1,11 @@
 import math
 from collections import Counter, defaultdict
-from logging import getLogger
 from typing import NamedTuple
 
 import numpy as np
 
-from .constants import LOG_LEVEL, TRANSACTION_FEE
+from .constants import TRANSACTION_FEE
 from .data_aggregator import DataAggregator, Month, Year
-
-logger = getLogger(__name__)
-logger.setLevel(LOG_LEVEL)
 
 
 class Transaction(NamedTuple):
@@ -17,10 +13,6 @@ class Transaction(NamedTuple):
     amount: float
     month: Month
     year: Year
-
-
-class BookKeeperException(Exception):
-    ...
 
 
 class BookKeeper:
