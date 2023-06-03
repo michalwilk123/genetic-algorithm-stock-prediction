@@ -13,7 +13,6 @@ DataAggregatorProps = {
     "stock_trends": str(Path("data") / "stock_trends.csv"),
 }
 
-MUTATION = 1 
 FIELDS_TO_MUTATE = 10
 MUTATION_FACTOR = 0.5
 

@@ -8,7 +8,6 @@ from .constants import (
     COMPANY_BIAS_INFLUENCE,
     DIVERSIFICATION_BONUS,
     FIELDS_TO_MUTATE,
-    MUTATION,
     MUTATION_FACTOR,
     SECTOR_BIAS_INFLUENCE,
 )
@@ -102,7 +101,6 @@ class AgentInputs(NamedTuple):
         child = (father_arr + mother_arr) / 2
 
         noise = np.random.random_sample(FIELDS_TO_MUTATE)
-        noise *= MUTATION
 
         fields_to_change = np.random.choice(
             n_of_fields, FIELDS_TO_MUTATE, replace=False
@@ -195,8 +193,7 @@ class Agent:
 
     @property
     def profit(self):
-        return self._bookkeeper.balance - self._start_balance,
-
+        return (self._bookkeeper.balance - self._start_balance,)
 
     def get_report(self) -> AgentReport:
         return AgentReport(
