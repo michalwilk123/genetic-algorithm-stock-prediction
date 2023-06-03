@@ -1,5 +1,6 @@
 import time
-from pprint import pprint
+import pprint
+import numpy as np
 
 import tqdm
 
@@ -98,11 +99,9 @@ Best per generation: {self._num_of_best_candidates} ; Time to train: {self._trai
 ==================================================================\n\n
 """
 
-        for gen, (period, agents) in enumerate(zip(self._periods, self._agent_history)):
+        for gen, (period, agents) in enumerate(zip(self._periods, self._agent_history[:-1])):
             if gen == 0:
                 gen_name = "INITIAL"
-            elif gen == len(self._agent_history) - 1:
-                gen_name = "RESULT"
             else:
                 gen_name = gen
 
@@ -111,7 +110,8 @@ Best per generation: {self._num_of_best_candidates} ; Time to train: {self._trai
                 "==================================================================\n"
             )
             rep += "Best Agent:\n"
-            rep += str(max(agents, key= lambda a: a.evaluate()).get_report()) + "\n"
+            rep += pprint.pformat(max(agents, key= lambda a: a.evaluate()).get_report()) + "\n\n"
+            rep += f"Average Agent profit: {np.mean([agent.profit for agent in agents])}\n"
             rep += (
                 "==================================================================\n\n"
             )

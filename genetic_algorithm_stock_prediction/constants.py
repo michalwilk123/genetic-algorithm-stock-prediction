@@ -13,20 +13,20 @@ DataAggregatorProps = {
     "stock_trends": str(Path("data") / "stock_trends.csv"),
 }
 
-MUTATION = 0.3
-FIELDS_TO_MUTATE = 4
+MUTATION = 1 
+FIELDS_TO_MUTATE = 10
 MUTATION_FACTOR = 0.5
 
 COMPANY_BIAS_INFLUENCE = 0.3
 SECTOR_BIAS_INFLUENCE = 0.2
 
 SimulationProps = {
-    "number_of_agents": 200,
+    "number_of_agents": 300,
     "agent_life_expectancy": 2 * 12,
     "delta": 6,
     "num_of_best_candidates": 40,
     "start_date": (6, 2010),
-    "end_date": (1, 2023),
+    "end_date": (5, 2023),
 }
 
 

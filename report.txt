@@ -1,138 +1,620 @@
 
 SUMMARY OF TRAINING: 
-Epochs: 23 ; Agents per generation: 200 
-Best per generation: 40 ; Time to train: 56.21
+Epochs: 23 ; Agents per generation: 300 
+Best per generation: 40 ; Time to train: 79.42
 ==================================================================
 
 
 GENERATION: INITIAL START DATE: (6, 2010) END DATE: (6, 2012): 
 ==================================================================
 Best Agent:
-AgentReport(profit=7628.392562313013, number_of_transactions=3, average_transaction_amount=9202.797520771004, multiplier=0.8023355615813145, courage=0.7431240793202325, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.6163940775138916, 'TECHNOLOGY': 0.6016488545013605, 'BANKING': 0.1488453442885802, 'HEALTHCARE': 0.9051765077908226, 'ENERGY': 0.2536943494090247, 'FOOD': 0.0625941645519551, 'TELECOMUNICATION': 0.17244971092469552, 'SOFTWARE': 0.7443657549044317, 'MEDIA': 0.47171706439551575, 'RETAIL': 0.8001433833709332}, favourite_stocks={'AMZN': 9980})
+AgentReport(profit=(11740.236358144943,),
+            number_of_transactions=5,
+            average_transaction_amount=6342.047271628988,
+            multiplier=0.6290417797125194,
+            courage=0.6942514063475917,
+            invested_companies=2,
+            sector_biases={'AUTOMOTIVE': 0.8743749457458677,
+                           'BANKING': 0.1495773967783468,
+                           'ENERGY': 0.24033715541878753,
+                           'FOOD': 0.40365953941399824,
+                           'HEALTHCARE': 0.9702447016211522,
+                           'MEDIA': 0.31400593188694315,
+                           'RETAIL': 0.002804349654157101,
+                           'SOFTWARE': 0.5758902224165187,
+                           'TECHNOLOGY': 0.61358541854836,
+                           'TELECOMUNICATION': 0.10964487168503101},
+            bought_stocks={'AAPL': 9627, 'BAYN.DE': 343})
+
+Average Agent profit: 920.5271969686037
 ==================================================================
 
 GENERATION: 1 START DATE: (6, 2010) END DATE: (6, 2012): 
 ==================================================================
 Best Agent:
-AgentReport(profit=7394.587315963705, number_of_transactions=19, average_transaction_amount=2518.878156117869, multiplier=0.8210467837432457, courage=0.19645701108562752, invested_companies=7, sector_biases={'AUTOMOTIVE': 0.36996947774011507, 'TECHNOLOGY': 0.747698726517148, 'BANKING': 0.4789441289463278, 'HEALTHCARE': 0.14914452476614604, 'ENERGY': 0.44787795244148687, 'FOOD': 0.3018229823487593, 'TELECOMUNICATION': 0.5087082661166511, 'SOFTWARE': 0.24592480251198612, 'MEDIA': 0.6514353472979958, 'RETAIL': 0.27966193138775}, favourite_stocks={'AMZN': 6424, 'SMSN.IL': 4002, 'BAC': 2853.75524365417, 'AAPL': 1897, 'TTE': 1795, 'GBX': 1685, 'PFE': 1530.2935814837335})
+AgentReport(profit=(8681.50648618606,),
+            number_of_transactions=3,
+            average_transaction_amount=9553.835495395353,
+            multiplier=0.741548391428805,
+            courage=0.7185257564992484,
+            invested_companies=1,
+            sector_biases={'AUTOMOTIVE': 0.7092728596743691,
+                           'BANKING': 0.22305840245498237,
+                           'ENERGY': 0.328093523970523,
+                           'FOOD': 0.44030916128394,
+                           'HEALTHCARE': 0.9040909436560993,
+                           'MEDIA': 0.39873053676546316,
+                           'RETAIL': 0.16804513640528912,
+                           'SOFTWARE': 0.6186123516457451,
+                           'TECHNOLOGY': 0.6257066214955314,
+                           'TELECOMUNICATION': 0.5440609410815519},
+            bought_stocks={'AAPL': 9980})
+
+Average Agent profit: 1629.6244298425988
 ==================================================================
 
 GENERATION: 2 START DATE: (12, 2010) END DATE: (12, 2012): 
 ==================================================================
 Best Agent:
-AgentReport(profit=8693.255387025049, number_of_transactions=24, average_transaction_amount=1791.6125460328687, multiplier=0.34446088805169195, courage=0.2925569038453152, invested_companies=5, sector_biases={'AUTOMOTIVE': 0.4923022614680888, 'TECHNOLOGY': 0.4471076247979445, 'BANKING': 0.40063343188066214, 'HEALTHCARE': 0.5336419714084271, 'ENERGY': 0.3672243312626817, 'FOOD': 0.4258570147592962, 'TELECOMUNICATION': 0.39771061484023823, 'SOFTWARE': 0.42347961825602587, 'MEDIA': 0.38455161019131645, 'RETAIL': 0.40108295830713886}, favourite_stocks={'GM': 4266.132170627389, 'NFLX': 4015, 'BAYN.DE': 3834.0, 'CVX': 3731.5906882545123, 'DIS': 1231})
+AgentReport(profit=(6880.245075968331,),
+            number_of_transactions=12,
+            average_transaction_amount=2805.1638982887685,
+            multiplier=0.6401117866299406,
+            courage=0.42315852271690346,
+            invested_companies=5,
+            sector_biases={'AUTOMOTIVE': 0.5371221768926505,
+                           'BANKING': 0.4842268933947995,
+                           'ENERGY': 0.41072540019910764,
+                           'FOOD': 0.6139880832068101,
+                           'HEALTHCARE': 0.709697544594476,
+                           'MEDIA': 0.5896209381535872,
+                           'RETAIL': 0.484108076332274,
+                           'SOFTWARE': 0.5303856287437166,
+                           'TECHNOLOGY': 0.5241806598100462,
+                           'TELECOMUNICATION': 0.38518962004647356},
+            bought_stocks={'BAYN.DE': 656.8608517484423,
+                           'HD': 2807,
+                           'NFLX': 6061,
+                           'NSRGF': 3398,
+                           'TTE': 438})
+
+Average Agent profit: 2345.083072849511
 ==================================================================
 
 GENERATION: 3 START DATE: (6, 2011) END DATE: (6, 2013): 
 ==================================================================
 Best Agent:
-AgentReport(profit=38725.370595647204, number_of_transactions=32, average_transaction_amount=3338.3044096818976, multiplier=0.6078988345907197, courage=0.38305403101384516, invested_companies=5, sector_biases={'AUTOMOTIVE': 0.13265819384006788, 'TECHNOLOGY': 0.5480844745549687, 'BANKING': 0.34585253871798277, 'HEALTHCARE': 0.3030342481353373, 'ENERGY': 0.31927754366777567, 'FOOD': 0.38264916587566095, 'TELECOMUNICATION': 0.4638492360126717, 'SOFTWARE': 0.3803875377654021, 'MEDIA': 0.555299772510017, 'RETAIL': 0.4568491441475284}, favourite_stocks={'CVX': 10783.011820579832, 'TTE': 10512.661053438987, 'NFLX': 9989.38785835995, 'BAYN.DE': 2537, 'PFE': 143.12452470799326})
+AgentReport(profit=(19808.369996903206,),
+            number_of_transactions=6,
+            average_transaction_amount=6629.728332817201,
+            multiplier=0.6927423331848555,
+            courage=0.4318163931929581,
+            invested_companies=3,
+            sector_biases={'AUTOMOTIVE': 0.5035605087763838,
+                           'BANKING': 0.5345865453109959,
+                           'ENERGY': 0.3387900062228596,
+                           'FOOD': 0.5526452488778132,
+                           'HEALTHCARE': 0.8026592024170709,
+                           'MEDIA': 0.5814708091196508,
+                           'RETAIL': 0.5891379114479354,
+                           'SOFTWARE': 0.48164616866699494,
+                           'TECHNOLOGY': 0.5641725118349614,
+                           'TELECOMUNICATION': 0.6117490618087409},
+            bought_stocks={'NFLX': 3621, 'NOK': 2736, 'WMT': 3613})
+
+Average Agent profit: 5822.577270985671
 ==================================================================
 
 GENERATION: 4 START DATE: (12, 2011) END DATE: (12, 2013): 
 ==================================================================
 Best Agent:
-AgentReport(profit=46495.39418039576, number_of_transactions=22, average_transaction_amount=4690.016913711351, multiplier=0.6124768662400812, courage=0.4016632424307321, invested_companies=4, sector_biases={'AUTOMOTIVE': 0.31958436238323096, 'TECHNOLOGY': 0.3869264135540572, 'BANKING': 0.15187909706769762, 'HEALTHCARE': 0.2437825487690248, 'ENERGY': 0.35164705385886197, 'FOOD': 0.3916400159068635, 'TELECOMUNICATION': 0.4179574140296669, 'SOFTWARE': 0.38630251336450805, 'MEDIA': 0.5104764951245981, 'RETAIL': 0.44990336515174495}, favourite_stocks={'TTE': 15601.076621949283, 'NFLX': 7919, 'CVS': 2575, 'PFE': 2182.4123386776987})
+AgentReport(profit=(21794.19903473463,),
+            number_of_transactions=8,
+            average_transaction_amount=5219.274879341829,
+            multiplier=0.6880459165148822,
+            courage=0.42280030476889885,
+            invested_companies=4,
+            sector_biases={'AUTOMOTIVE': 0.43834333131119263,
+                           'BANKING': 0.5311235833032901,
+                           'ENERGY': 0.44505413469667926,
+                           'FOOD': 0.7387575299517539,
+                           'HEALTHCARE': 0.6871139454735068,
+                           'MEDIA': 0.5860626694897895,
+                           'RETAIL': 0.6684631272705179,
+                           'SOFTWARE': 0.41924077812859584,
+                           'TECHNOLOGY': 0.5241615461619817,
+                           'TELECOMUNICATION': 0.6198768752398515},
+            bought_stocks={'C': 3080, 'MCD': 3502, 'NFLX': 3111, 'PEP': 267})
+
+Average Agent profit: 7638.112583198817
 ==================================================================
 
 GENERATION: 5 START DATE: (6, 2012) END DATE: (6, 2014): 
 ==================================================================
 Best Agent:
-AgentReport(profit=14661.727305299391, number_of_transactions=33, average_transaction_amount=2067.6789567165815, multiplier=0.46958463870382056, courage=0.34492915148676634, invested_companies=11, sector_biases={'AUTOMOTIVE': 0.5048606037836918, 'TECHNOLOGY': 0.3702111346835605, 'BANKING': 0.2560672645894044, 'HEALTHCARE': 0.48704953501199266, 'ENERGY': 0.3251898641245568, 'FOOD': 0.3721131665597231, 'TELECOMUNICATION': 0.3858788133442599, 'SOFTWARE': 0.48181899496346264, 'MEDIA': 0.3733105677089039, 'RETAIL': 0.38639094856788386}, favourite_stocks={'TMUS': 5079, 'META': 4842.438416272998, 'CVS': 2806, 'BAYN.DE': 2360, 'MCD': 1917, 'NFLX': 1795, 'MDLZ': 1744.0, 'GM': 1629, 'KO': 1549.7729351085175, 'SAN': 1493.2561915173874, 'SONY': 1490.371590274997})
+AgentReport(profit=(15127.847445323747,),
+            number_of_transactions=8,
+            average_transaction_amount=4385.980930665468,
+            multiplier=0.7447689792336422,
+            courage=0.32338059795531554,
+            invested_companies=4,
+            sector_biases={'AUTOMOTIVE': 0.5933996582130813,
+                           'BANKING': 0.5945382271314773,
+                           'ENERGY': 0.4948139111916798,
+                           'FOOD': 0.5501184400825347,
+                           'HEALTHCARE': 0.711151221014485,
+                           'MEDIA': 0.5168817201080942,
+                           'RETAIL': 0.411399090286835,
+                           'SOFTWARE': 0.5633111947962566,
+                           'TECHNOLOGY': 0.550454639380604,
+                           'TELECOMUNICATION': 0.6349571439096494},
+            bought_stocks={'CVS': 3426, 'MCD': 19, 'NFLX': 3387, 'VZ': 3128})
+
+Average Agent profit: 5567.7771183838695
 ==================================================================
 
 GENERATION: 6 START DATE: (12, 2012) END DATE: (12, 2014): 
 ==================================================================
 Best Agent:
-AgentReport(profit=13646.745890747537, number_of_transactions=36, average_transaction_amount=1671.3096391977606, multiplier=0.46477008363680195, courage=0.2920142155060559, invested_companies=12, sector_biases={'AUTOMOTIVE': 0.3725714813327224, 'TECHNOLOGY': 0.4054554239394278, 'BANKING': 0.27936813233676483, 'HEALTHCARE': 0.6404929297987847, 'ENERGY': 0.4025005002240303, 'FOOD': 0.2563055329268469, 'TELECOMUNICATION': 0.3944328336684555, 'SOFTWARE': 0.24808308423855016, 'MEDIA': 0.3790726766050494, 'RETAIL': 0.38317196860039193}, favourite_stocks={'CVS': 4795.227470360663, 'GBX': 3403, 'META': 3102, 'SONY': 2754.6900050574204, 'NOK': 1854.0, 'MCD': 1771, 'NFLX': 1551, 'TMUS': 1456.0, 'KO': 916.954393902234, 'VZ': 606.8841234970315, 'BAYN.DE': 528.2209338903907, 'CVX': 426.22363347817964})
+AgentReport(profit=(19788.919582307026,),
+            number_of_transactions=4,
+            average_transaction_amount=9939.729895576756,
+            multiplier=0.5721546842489853,
+            courage=0.6455041457612831,
+            invested_companies=1,
+            sector_biases={'AUTOMOTIVE': 0.4484013779973301,
+                           'BANKING': 0.4680641581825955,
+                           'ENERGY': 0.47565721352967416,
+                           'FOOD': 0.3108490162554016,
+                           'HEALTHCARE': 0.6021310469289383,
+                           'MEDIA': 0.6309655084313739,
+                           'RETAIL': 0.5547667093575519,
+                           'SOFTWARE': 0.463412665579906,
+                           'TECHNOLOGY': 0.505351773015154,
+                           'TELECOMUNICATION': 0.5769430743101154},
+            bought_stocks={'META': 9970})
+
+Average Agent profit: 3761.9632485732845
 ==================================================================
 
 GENERATION: 7 START DATE: (6, 2013) END DATE: (6, 2015): 
 ==================================================================
 Best Agent:
-AgentReport(profit=6160.271099910904, number_of_transactions=7, average_transaction_amount=3730.0387285587008, multiplier=0.4785000873418292, courage=0.416964673533264, invested_companies=2, sector_biases={'AUTOMOTIVE': 0.30140864837958103, 'TECHNOLOGY': 0.37695753746360516, 'BANKING': 0.26402025167764714, 'HEALTHCARE': 0.26953914010031876, 'ENERGY': 0.3698442619577542, 'FOOD': 0.3140761234882917, 'TELECOMUNICATION': 0.3510368498046878, 'SOFTWARE': 0.34706403124101176, 'MEDIA': 0.41117928221682076, 'RETAIL': 0.37860481426264797}, favourite_stocks={'CVS': 7028, 'AMZN': 2922})
+AgentReport(profit=(8049.868169556557,),
+            number_of_transactions=6,
+            average_transaction_amount=4669.9780282594265,
+            multiplier=0.6401718753018153,
+            courage=0.4970448422910784,
+            invested_companies=3,
+            sector_biases={'AUTOMOTIVE': 0.5117988862811201,
+                           'BANKING': 0.6107902077577556,
+                           'ENERGY': 0.4905386254593658,
+                           'FOOD': 0.4292535355318258,
+                           'HEALTHCARE': 0.6472749964765164,
+                           'MEDIA': 0.543844707645998,
+                           'RETAIL': 0.5044390891625197,
+                           'SOFTWARE': 0.483550811446145,
+                           'TECHNOLOGY': 0.50883588232122,
+                           'TELECOMUNICATION': 0.5767475647029336},
+            bought_stocks={'CVS': 2955, 'DIS': 3352, 'META': 3663})
+
+Average Agent profit: 1566.5856145900782
 ==================================================================
 
 GENERATION: 8 START DATE: (12, 2013) END DATE: (12, 2015): 
 ==================================================================
 Best Agent:
-AgentReport(profit=7783.9991698821395, number_of_transactions=7, average_transaction_amount=3961.9998814117343, multiplier=0.48384232289084017, courage=0.42823519451364667, invested_companies=2, sector_biases={'AUTOMOTIVE': 0.36183143847515664, 'TECHNOLOGY': 0.36175724459095104, 'BANKING': 0.2506412163317536, 'HEALTHCARE': 0.41379970140101374, 'ENERGY': 0.36007345928193735, 'FOOD': 0.3024325572415986, 'TELECOMUNICATION': 0.38433289630443235, 'SOFTWARE': 0.3923728826845391, 'MEDIA': 0.38401701322937, 'RETAIL': 0.3853274221129551}, favourite_stocks={'AMZN': 5079, 'CVS': 4871})
+AgentReport(profit=(5374.764521638903,),
+            number_of_transactions=24,
+            average_transaction_amount=1912.3664810426235,
+            multiplier=0.6548783567620535,
+            courage=0.41670445513440457,
+            invested_companies=10,
+            sector_biases={'AUTOMOTIVE': 0.2699070732458204,
+                           'BANKING': 0.5300962563653527,
+                           'ENERGY': 0.4609398156056224,
+                           'FOOD': 0.4892172196969645,
+                           'HEALTHCARE': 0.6003137159757868,
+                           'MEDIA': 0.5403867447717081,
+                           'RETAIL': 0.4590129306458667,
+                           'SOFTWARE': 0.48982322378634235,
+                           'TECHNOLOGY': 0.49698735051883036,
+                           'TELECOMUNICATION': 0.5993184262042361},
+            bought_stocks={'BAYN.DE': 414,
+                           'COST': 806.8047112889452,
+                           'CRM': 2962,
+                           'CVX': 18.0,
+                           'DIS': 3255,
+                           'SAN': 3331,
+                           'TGT': 2809.0,
+                           'TMUS': 315.43597456917126,
+                           'UNH': 6027,
+                           'VOD': 267.77482583391327})
+
+Average Agent profit: 1187.0883598332223
 ==================================================================
 
 GENERATION: 9 START DATE: (6, 2014) END DATE: (6, 2016): 
 ==================================================================
 Best Agent:
-AgentReport(profit=11559.284524573603, number_of_transactions=6, average_transaction_amount=5251.547420762267, multiplier=0.49400689971427525, courage=0.3758187191540675, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.2857117715228788, 'TECHNOLOGY': 0.28982951810633695, 'BANKING': 0.21890469318987266, 'HEALTHCARE': 0.6252422511440517, 'ENERGY': 0.3864943305414479, 'FOOD': 0.30675695703996814, 'TELECOMUNICATION': 0.34149505778410644, 'SOFTWARE': 0.38035794836248105, 'MEDIA': 0.42622721495521987, 'RETAIL': 0.35722391487040134}, favourite_stocks={'AMZN': 9950})
+AgentReport(profit=(8838.813771813857,),
+            number_of_transactions=5,
+            average_transaction_amount=5759.762754362771,
+            multiplier=0.5304168319110731,
+            courage=0.5074508782050005,
+            invested_companies=1,
+            sector_biases={'AUTOMOTIVE': 0.3918115578260869,
+                           'BANKING': 0.5565764452832356,
+                           'ENERGY': 0.6406964046574198,
+                           'FOOD': 0.44390882919730795,
+                           'HEALTHCARE': 0.6417610297668339,
+                           'MEDIA': 0.397592357673601,
+                           'RETAIL': 0.5039800898809861,
+                           'SOFTWARE': 0.43405752620105487,
+                           'TECHNOLOGY': 0.4702842127378,
+                           'TELECOMUNICATION': 0.6041168033964905},
+            bought_stocks={'AMZN': 9960})
+
+Average Agent profit: 1387.593043839222
 ==================================================================
 
 GENERATION: 10 START DATE: (12, 2014) END DATE: (12, 2016): 
 ==================================================================
 Best Agent:
-AgentReport(profit=10815.362912562032, number_of_transactions=6, average_transaction_amount=5127.560485427005, multiplier=0.4908393974706506, courage=0.3712724507514245, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.2084936493975597, 'TECHNOLOGY': 0.30413878834760916, 'BANKING': 0.23158517353025462, 'HEALTHCARE': 0.25461292528375457, 'ENERGY': 0.37863064825047565, 'FOOD': 0.28342153706245565, 'TELECOMUNICATION': 0.40084198192534376, 'SOFTWARE': 0.3273387743613825, 'MEDIA': 0.3880574348386815, 'RETAIL': 0.35907324755072256}, favourite_stocks={'AMZN': 9950})
+AgentReport(profit=(14768.257336043585,),
+            number_of_transactions=10,
+            average_transaction_amount=4120.69936626862,
+            multiplier=0.6162436105485609,
+            courage=0.44562032823486586,
+            invested_companies=4,
+            sector_biases={'AUTOMOTIVE': 0.4556824442469332,
+                           'BANKING': 0.4729769492969058,
+                           'ENERGY': 0.458611154114851,
+                           'FOOD': 0.4946170100810595,
+                           'HEALTHCARE': 0.5966540408661973,
+                           'MEDIA': 0.6289957742760258,
+                           'RETAIL': 0.41793480782628567,
+                           'SOFTWARE': 0.43823283482202297,
+                           'TECHNOLOGY': 0.5104128136139023,
+                           'TELECOMUNICATION': 0.6914017664920902},
+            bought_stocks={'AAPL': 5912,
+                           'JNJ': 3303,
+                           'NVDA': 3341,
+                           'WMT': 638.3681633213037})
+
+Average Agent profit: 4088.5822688752933
 ==================================================================
 
 GENERATION: 11 START DATE: (6, 2015) END DATE: (6, 2017): 
 ==================================================================
 Best Agent:
-AgentReport(profit=9162.791215982441, number_of_transactions=6, average_transaction_amount=4852.1318693304065, multiplier=0.4906372009479675, courage=0.38816289225346823, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.3093624966135511, 'TECHNOLOGY': 0.336073592132478, 'BANKING': 0.23912888661599668, 'HEALTHCARE': 0.421922912124394, 'ENERGY': 0.38232148940995253, 'FOOD': 0.2664116568879943, 'TELECOMUNICATION': 0.3600871982594289, 'SOFTWARE': 0.2550286173907713, 'MEDIA': 0.3624443613558179, 'RETAIL': 0.3595327097833442}, favourite_stocks={'AMZN': 9950})
+AgentReport(profit=(18975.58508344778,),
+            number_of_transactions=7,
+            average_transaction_amount=5562.226440492539,
+            multiplier=0.5828588150040523,
+            courage=0.48050584649454037,
+            invested_companies=3,
+            sector_biases={'AUTOMOTIVE': 0.4090968788728966,
+                           'BANKING': 0.48615811178213775,
+                           'ENERGY': 0.41564851513598206,
+                           'FOOD': 0.5159324629814575,
+                           'HEALTHCARE': 0.5498151050878568,
+                           'MEDIA': 0.5837966856725938,
+                           'RETAIL': 0.5542760425485809,
+                           'SOFTWARE': 0.4431265377347228,
+                           'TECHNOLOGY': 0.46724974515948686,
+                           'TELECOMUNICATION': 0.5950906218307279},
+            bought_stocks={'BAYN.DE': 1092, 'NFLX': 5957, 'NVDA': 2911})
+
+Average Agent profit: 4176.03384505395
 ==================================================================
 
 GENERATION: 12 START DATE: (12, 2015) END DATE: (12, 2017): 
 ==================================================================
 Best Agent:
-AgentReport(profit=12087.639896029192, number_of_transactions=10, average_transaction_amount=3656.791774871794, multiplier=0.48928543317239137, courage=0.3801865683154997, invested_companies=2, sector_biases={'AUTOMOTIVE': 0.22480167654404618, 'TECHNOLOGY': 0.29697459897247225, 'BANKING': 0.2368435080430495, 'HEALTHCARE': 0.4357244351745057, 'ENERGY': 0.3843039942041411, 'FOOD': 0.2781645894087261, 'TELECOMUNICATION': 0.371848916174504, 'SOFTWARE': 0.28868466796127773, 'MEDIA': 0.3805934130345101, 'RETAIL': 0.35770506825069315}, favourite_stocks={'AMZN': 10223.138926344374, 'UNH': 1982})
+AgentReport(profit=(25708.092591312452,),
+            number_of_transactions=7,
+            average_transaction_amount=6522.584655901779,
+            multiplier=0.4046324524480567,
+            courage=0.4697696970013321,
+            invested_companies=2,
+            sector_biases={'AUTOMOTIVE': 0.41736327463350037,
+                           'BANKING': 0.5158668144798279,
+                           'ENERGY': 0.5587774043618802,
+                           'FOOD': 0.2792606139926712,
+                           'HEALTHCARE': 0.5701265408743231,
+                           'MEDIA': 0.5939400459357328,
+                           'RETAIL': 0.5519156899926043,
+                           'SOFTWARE': 0.4502597805891349,
+                           'TECHNOLOGY': 0.5261062151181966,
+                           'TELECOMUNICATION': 0.6077637360470447},
+            bought_stocks={'BAYN.DE': 4261, 'NVDA': 5689})
+
+Average Agent profit: 6463.717631819846
 ==================================================================
 
 GENERATION: 13 START DATE: (6, 2016) END DATE: (6, 2018): 
 ==================================================================
 Best Agent:
-AgentReport(profit=11645.735530968777, number_of_transactions=7, average_transaction_amount=4512.2479329955395, multiplier=0.48280017255829816, courage=0.37565563511315136, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.25961144002411773, 'TECHNOLOGY': 0.0015923147994796605, 'BANKING': 0.17861474976382652, 'HEALTHCARE': 0.4473768948396703, 'ENERGY': 0.31193092085577573, 'FOOD': 0.2895754458206553, 'TELECOMUNICATION': 0.3421437349929965, 'SOFTWARE': 0.3428396225099486, 'MEDIA': 0.18282542910706814, 'RETAIL': 0.35004022809967783}, favourite_stocks={'AMZN': 9940})
+AgentReport(profit=(13013.01983267655,),
+            number_of_transactions=4,
+            average_transaction_amount=8245.754958169138,
+            multiplier=0.7287071589517682,
+            courage=0.488807852075152,
+            invested_companies=1,
+            sector_biases={'AUTOMOTIVE': 0.5587611690957364,
+                           'BANKING': 0.45741038804098655,
+                           'ENERGY': 0.5780093900200023,
+                           'FOOD': 0.5018931253471205,
+                           'HEALTHCARE': 0.5028217661611957,
+                           'MEDIA': 0.5203558658024496,
+                           'RETAIL': 0.7797159791556068,
+                           'SOFTWARE': 0.45160350505933233,
+                           'TECHNOLOGY': 0.5131998549970822,
+                           'TELECOMUNICATION': 0.5434296681125486},
+            bought_stocks={'AMZN': 9970})
+
+Average Agent profit: 6771.214456718583
 ==================================================================
 
 GENERATION: 14 START DATE: (12, 2016) END DATE: (12, 2018): 
 ==================================================================
 Best Agent:
-AgentReport(profit=6802.590885713482, number_of_transactions=7, average_transaction_amount=3820.3701265304976, multiplier=0.47902564591850805, courage=0.38220904635619124, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.26884845137594826, 'TECHNOLOGY': 0.11672488669674094, 'BANKING': 0.2013549881523538, 'HEALTHCARE': 0.4530262363271683, 'ENERGY': 0.2911520612251317, 'FOOD': 0.27686417935741614, 'TELECOMUNICATION': 0.3363708842007487, 'SOFTWARE': 0.34202844637718466, 'MEDIA': 0.0986525597044978, 'RETAIL': 0.3529661730721624}, favourite_stocks={'AMZN': 9940})
+AgentReport(profit=(8058.448809475161,),
+            number_of_transactions=5,
+            average_transaction_amount=5605.689761895032,
+            multiplier=0.6169307533297118,
+            courage=0.5033590603046265,
+            invested_companies=2,
+            sector_biases={'AUTOMOTIVE': 0.39619549932640385,
+                           'BANKING': 0.44122502381312273,
+                           'ENERGY': 0.6177987774939924,
+                           'FOOD': 0.44891065811773767,
+                           'HEALTHCARE': 0.5126379285669276,
+                           'MEDIA': 0.527681116133638,
+                           'RETAIL': 0.6280300300608489,
+                           'SOFTWARE': 0.7185646253212719,
+                           'TECHNOLOGY': 0.5303331065883805,
+                           'TELECOMUNICATION': 0.5851719937109463},
+            bought_stocks={'AMZN': 3461, 'MSFT': 6509})
+
+Average Agent profit: 4964.505168997581
 ==================================================================
 
 GENERATION: 15 START DATE: (6, 2017) END DATE: (6, 2019): 
 ==================================================================
 Best Agent:
-AgentReport(profit=3907.506646715232, number_of_transactions=14, average_transaction_amount=1858.1076253340839, multiplier=0.47693479755715673, courage=0.21407665307060958, invested_companies=5, sector_biases={'AUTOMOTIVE': 0.2757932375867299, 'TECHNOLOGY': 0.2744377175224516, 'BANKING': 0.22774108240988356, 'HEALTHCARE': 0.4408059678991152, 'ENERGY': 0.2843931989764762, 'FOOD': 0.26999681909021345, 'TELECOMUNICATION': 0.3390671488290318, 'SOFTWARE': 0.3316088696338498, 'MEDIA': 0.3869012440968729, 'RETAIL': 0.35513197725756285}, favourite_stocks={'MCD': 2903, 'AMZN': 2656.00005398097, 'AAPL': 2341, 'GOOGL': 2071, 'TMUS': 1037})
+AgentReport(profit=(8161.508793222929,),
+            number_of_transactions=6,
+            average_transaction_amount=4688.584798870488,
+            multiplier=0.7328863718729053,
+            courage=0.5295944787757955,
+            invested_companies=3,
+            sector_biases={'AUTOMOTIVE': 0.47403652972925736,
+                           'BANKING': 0.604186429892771,
+                           'ENERGY': 0.5858314865432677,
+                           'FOOD': 0.4939578800773463,
+                           'HEALTHCARE': 0.4694620275314423,
+                           'MEDIA': 0.4445978242772998,
+                           'RETAIL': 0.6367996071374566,
+                           'SOFTWARE': 0.4771412610011162,
+                           'TECHNOLOGY': 0.42560121977160376,
+                           'TELECOMUNICATION': 0.5041734573515675},
+            bought_stocks={'AMZN': 4553, 'TGT': 4631, 'TTE': 786})
+
+Average Agent profit: 3451.262486026995
 ==================================================================
 
 GENERATION: 16 START DATE: (12, 2017) END DATE: (12, 2019): 
 ==================================================================
 Best Agent:
-AgentReport(profit=4901.136587095969, number_of_transactions=7, average_transaction_amount=3548.7337981565674, multiplier=0.47929709413257865, courage=0.3814342128505153, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.2667254507553529, 'TECHNOLOGY': 0.18920514771868624, 'BANKING': 0.15655636689108765, 'HEALTHCARE': 0.44610872514269123, 'ENERGY': 0.28248782086880386, 'FOOD': 0.27740178684999506, 'TELECOMUNICATION': 0.2842059117120255, 'SOFTWARE': 0.3453964374060639, 'MEDIA': 0.25864129451173823, 'RETAIL': 0.29501524424236525}, favourite_stocks={'AMZN': 9940})
+AgentReport(profit=(7521.397636778176,),
+            number_of_transactions=5,
+            average_transaction_amount=5498.279527355635,
+            multiplier=0.6331211646151561,
+            courage=0.5040853401826235,
+            invested_companies=2,
+            sector_biases={'AUTOMOTIVE': 0.39948677890090667,
+                           'BANKING': 0.44323388212784776,
+                           'ENERGY': 0.6275530620651598,
+                           'FOOD': 0.4567180917909767,
+                           'HEALTHCARE': 0.6325899840273279,
+                           'MEDIA': 0.5204011338212979,
+                           'RETAIL': 0.6673877267411471,
+                           'SOFTWARE': 0.5720106769291622,
+                           'TECHNOLOGY': 0.6315594217879947,
+                           'TELECOMUNICATION': 0.4132604536025946},
+            bought_stocks={'AMZN': 3553, 'MSFT': 6417})
+
+Average Agent profit: 3101.0862099139704
 ==================================================================
 
 GENERATION: 17 START DATE: (6, 2018) END DATE: (6, 2020): 
 ==================================================================
 Best Agent:
-AgentReport(profit=9171.21146040873, number_of_transactions=6, average_transaction_amount=4853.535243401455, multiplier=0.48398043457539913, courage=0.3173270019756197, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.15896606144809505, 'TECHNOLOGY': 0.18104345096117186, 'BANKING': 0.12831592178001006, 'HEALTHCARE': 0.40630540396904763, 'ENERGY': 0.2969340546671865, 'FOOD': 0.16091182696620265, 'TELECOMUNICATION': 0.34430210548429924, 'SOFTWARE': 0.34072949138042563, 'MEDIA': 0.2963929222217496, 'RETAIL': 0.34897970336412554}, favourite_stocks={'AMZN': 9950})
+AgentReport(profit=(19426.740936341288,),
+            number_of_transactions=4,
+            average_transaction_amount=9849.185234085322,
+            multiplier=0.6287858890503961,
+            courage=0.5206683039520607,
+            invested_companies=1,
+            sector_biases={'AUTOMOTIVE': 0.5258752628744943,
+                           'BANKING': 0.538306669629421,
+                           'ENERGY': 0.5869706893178244,
+                           'FOOD': 0.4752067880449363,
+                           'HEALTHCARE': 0.3601198143248644,
+                           'MEDIA': 0.5393707031919912,
+                           'RETAIL': 0.6830667451695254,
+                           'SOFTWARE': 0.5631301805762532,
+                           'TECHNOLOGY': 0.5623136442599025,
+                           'TELECOMUNICATION': 0.5741540730035458},
+            bought_stocks={'AAPL': 9970})
+
+Average Agent profit: 7114.434751896603
 ==================================================================
 
 GENERATION: 18 START DATE: (12, 2018) END DATE: (12, 2020): 
 ==================================================================
 Best Agent:
-AgentReport(profit=9330.132330492488, number_of_transactions=13, average_transaction_amount=2250.0101792686532, multiplier=0.48284623629372125, courage=0.18401460410199647, invested_companies=5, sector_biases={'AUTOMOTIVE': 0.12353162750783712, 'TECHNOLOGY': 0.20087965416096476, 'BANKING': 0.1671028647863198, 'HEALTHCARE': 0.41241565055513707, 'ENERGY': 0.2835329616117155, 'FOOD': 0.22179776030740672, 'TELECOMUNICATION': 0.29600061356019297, 'SOFTWARE': 0.34031674601410344, 'MEDIA': 0.3170410867355526, 'RETAIL': 0.3496489289208957}, favourite_stocks={'AMZN': 3218, 'AAPL': 2385, 'CVS': 2100, 'MCD': 1262, 'MSFT': 955})
+AgentReport(profit=(20214.092273947514,),
+            number_of_transactions=8,
+            average_transaction_amount=5021.761534243439,
+            multiplier=0.5233494810620344,
+            courage=0.5184130963661928,
+            invested_companies=4,
+            sector_biases={'AUTOMOTIVE': 0.4388029115806853,
+                           'BANKING': 0.4722151404277433,
+                           'ENERGY': 0.6332246115559823,
+                           'FOOD': 0.4794593029579048,
+                           'HEALTHCARE': 0.7008588026055881,
+                           'MEDIA': 0.5005253488907464,
+                           'RETAIL': 0.6504604002479797,
+                           'SOFTWARE': 0.576392727202018,
+                           'TECHNOLOGY': 0.7782417532524212,
+                           'TELECOMUNICATION': 0.41138983012863345},
+            bought_stocks={'AAPL': 3049,
+                           'AMZN': 3285,
+                           'NVDA': 2835,
+                           'SMSN.IL': 791})
+
+Average Agent profit: 7459.587899489838
 ==================================================================
 
 GENERATION: 19 START DATE: (6, 2019) END DATE: (6, 2021): 
 ==================================================================
 Best Agent:
-AgentReport(profit=8008.0527373585355, number_of_transactions=7, average_transaction_amount=3992.578962479791, multiplier=0.4139861213063327, courage=0.32732877655336334, invested_companies=1, sector_biases={'AUTOMOTIVE': 0.20557428974239095, 'TECHNOLOGY': 0.21596231843491198, 'BANKING': 0.18052608754516744, 'HEALTHCARE': 0.40972628801448074, 'ENERGY': 0.010016972938792168, 'FOOD': 0.21021526954646705, 'TELECOMUNICATION': 0.33489957442129104, 'SOFTWARE': 0.3199487551487422, 'MEDIA': 0.27459642488974, 'RETAIL': 0.34898570082380054}, favourite_stocks={'AMZN': 9940})
+AgentReport(profit=(13998.299167254212,),
+            number_of_transactions=4,
+            average_transaction_amount=8492.074791813553,
+            multiplier=0.6221847026028486,
+            courage=0.6616822071602539,
+            invested_companies=1,
+            sector_biases={'AUTOMOTIVE': 0.4734541702965056,
+                           'BANKING': 0.5354516593470102,
+                           'ENERGY': 0.6689787964543712,
+                           'FOOD': 0.441023300348422,
+                           'HEALTHCARE': 0.5698161026852483,
+                           'MEDIA': 0.5990339462867711,
+                           'RETAIL': 0.6728044904777664,
+                           'SOFTWARE': 0.5655404006499547,
+                           'TECHNOLOGY': 0.5883483258490435,
+                           'TELECOMUNICATION': 0.48159535651698016},
+            bought_stocks={'AAPL': 9970})
+
+Average Agent profit: 8394.636070538545
 ==================================================================
 
 GENERATION: 20 START DATE: (12, 2019) END DATE: (12, 2021): 
 ==================================================================
 Best Agent:
-AgentReport(profit=3769.1143742356435, number_of_transactions=21, average_transaction_amount=1259.213934657854, multiplier=0.38347452863900616, courage=0.09707113531186845, invested_companies=6, sector_biases={'AUTOMOTIVE': 0.20081798026419984, 'TECHNOLOGY': 0.18291289111125242, 'BANKING': 0.17939973835053075, 'HEALTHCARE': 0.3383970932132757, 'ENERGY': 0.07549249349655592, 'FOOD': 0.22260898696096953, 'TELECOMUNICATION': 0.27093698279009715, 'SOFTWARE': 0.2397425275479204, 'MEDIA': 0.26964733668646157, 'RETAIL': 0.34837785679390443}, favourite_stocks={'CVS': 3656.1891267896485, 'AMZN': 3173, 'MCD': 1867, 'AAPL': 1230, 'TTE': 763, 'BP': 578})
+AgentReport(profit=(10610.929383112365,),
+            number_of_transactions=6,
+            average_transaction_amount=5096.8215638520605,
+            multiplier=0.6448201879770004,
+            courage=0.5497621566162103,
+            invested_companies=3,
+            sector_biases={'AUTOMOTIVE': 0.44471444287794376,
+                           'BANKING': 0.5077376494050237,
+                           'ENERGY': 0.5423683519444291,
+                           'FOOD': 0.44770468868945074,
+                           'HEALTHCARE': 0.5211253947117216,
+                           'MEDIA': 0.5250146413190158,
+                           'RETAIL': 0.5171673824745995,
+                           'SOFTWARE': 0.5819305871774821,
+                           'TECHNOLOGY': 0.5879328285191507,
+                           'TELECOMUNICATION': 0.5410000914012542},
+            bought_stocks={'C': 1795, 'GBX': 4097, 'XOM': 4078})
+
+Average Agent profit: 4366.4858178328905
 ==================================================================
 
 GENERATION: 21 START DATE: (6, 2020) END DATE: (6, 2022): 
 ==================================================================
 Best Agent:
-AgentReport(profit=3956.0263567223847, number_of_transactions=29, average_transaction_amount=1204.5652616705454, multiplier=0.40380201344652583, courage=0.2244681610781811, invested_companies=10, sector_biases={'AUTOMOTIVE': 0.17615753702549586, 'TECHNOLOGY': 0.19475439482360196, 'BANKING': 0.19430458651016735, 'HEALTHCARE': 0.21403464550729262, 'ENERGY': 0.25119145860706626, 'FOOD': 0.2119537404744795, 'TELECOMUNICATION': 0.22456414234864255, 'SOFTWARE': 0.32098086036225804, 'MEDIA': 0.2549066214982796, 'RETAIL': 0.3348217214507651}, favourite_stocks={'BP': 4731, 'MCD': 3518.6514950960036, 'MDLZ': 2066, 'IBM': 1237, 'CRM': 1101, 'COST': 965.0, 'UNH': 929, 'AMZN': 482.57520929262864, 'WMT': 227.15279603309727, 'TGT': 145.80361543998546})
+AgentReport(profit=(10870.351893963129,),
+            number_of_transactions=5,
+            average_transaction_amount=6168.070378792626,
+            multiplier=0.6514201846859544,
+            courage=0.5629286270151763,
+            invested_companies=2,
+            sector_biases={'AUTOMOTIVE': 0.6737696010080252,
+                           'BANKING': 0.5875224899426199,
+                           'ENERGY': 0.7710338221092456,
+                           'FOOD': 0.45182199771555465,
+                           'HEALTHCARE': 0.4939389565294963,
+                           'MEDIA': 0.5158911390145853,
+                           'RETAIL': 0.6603935728382818,
+                           'SOFTWARE': 0.5492734385991159,
+                           'TECHNOLOGY': 0.31323476864327626,
+                           'TELECOMUNICATION': 0.5063156190165289},
+            bought_stocks={'BP': 7586, 'XOM': 2384})
+
+Average Agent profit: 1793.622722051907
 ==================================================================
+
+
+
+RESULTS FROM EACH GEN:
+(6, 2010): [21760, 19261, 17789, 16824, 16486, 16160, 16126, 16056, 15954, 15689, 15652, 15620, 15541, 15376, 15343, 15253, 15087, 15005, 14813, 14787, 14757, 14746, 14695, 14526, 14469, 14461, 14400, 14375, 14366, 14303, 14243, 14057, 13971, 13968, 13961, 13923, 13901, 13899, 13691, 13632, 13509, 13503, 13451, 13417, 13382, 13381, 13364, 13313, 13290, 13257, 13250, 13244, 13216, 13187, 13183, 13118, 13077, 13068, 13054, 13039, 13018, 13010, 12972, 12947, 12942, 12904, 12848, 12750, 12675, 12671, 12649, 12597, 12591, 12520, 12483, 12475, 12441, 12438, 12406, 12393, 12373, 12372, 12369, 12300, 12260, 12249, 12205, 12187, 12156, 12147, 12137, 12071, 11988, 11988, 11966, 11940, 11883, 11865, 11817, 11816, 11813, 11750, 11730, 11712, 11710, 11701, 11690, 11649, 11596, 11592, 11579, 11560, 11486, 11446, 11431, 11430, 11425, 11387, 11376, 11370, 11370, 11362, 11342, 11331, 11240, 11224, 11116, 11115, 11110, 11066, 11058, 11036, 11024, 11001, 10945, 10939, 10938, 10921, 10920, 10876, 10809, 10769, 10769, 10763, 10731, 10722, 10666, 10628, 10616, 10600, 10579, 10567, 10565, 10531, 10531, 10529, 10504, 10488, 10373, 10326, 10325, 10325, 10286, 10198, 10172, 10146, 10122, 10113, 10080, 10069, 10040, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9991, 9968, 9964, 9959, 9958, 9951, 9943, 9876, 9876, 9860, 9854, 9834, 9820, 9809, 9804, 9673, 9645, 9634, 9616, 9568, 9551, 9539, 9520, 9454, 9421, 9366, 9359, 9323, 9314, 9308, 9192, 9169, 9145, 9130, 9087, 9062, 9054, 9043, 8916, 8861, 8832, 8759, 8741, 8734, 8720, 8708, 8674, 8662, 8541, 8533, 8519, 8474, 8374, 8339, 8327, 8292, 8088, 7946, 7877, 7871, 7841, 7797, 7552, 7270, 7202, 7110, 7107, 7104, 6993, 6755, 6678, 6611, 6442, 6353, 6193, 6148, 6000, 5805, 5796, 5628, 5594, 5487, 5325, 3373, 3177]
+
+(6, 2010): [18692, 18677, 18676, 17446, 16588, 15950, 15573, 15361, 15332, 15182, 14966, 14880, 14824, 14813, 14617, 14577, 14572, 14347, 14209, 14042, 13963, 13929, 13924, 13820, 13803, 13795, 13759, 13758, 13723, 13673, 13672, 13654, 13629, 13600, 13538, 13529, 13483, 13458, 13396, 13393, 13392, 13381, 13379, 13320, 13310, 13293, 13255, 13238, 13222, 13222, 13208, 13208, 13207, 13173, 13140, 13135, 13117, 13108, 13100, 13046, 13036, 13026, 13021, 13018, 13016, 13004, 12960, 12937, 12915, 12893, 12885, 12871, 12851, 12806, 12801, 12779, 12759, 12745, 12729, 12722, 12694, 12690, 12681, 12674, 12661, 12650, 12621, 12621, 12599, 12586, 12566, 12565, 12518, 12501, 12487, 12487, 12484, 12483, 12465, 12439, 12436, 12427, 12409, 12406, 12396, 12394, 12363, 12358, 12340, 12319, 12316, 12295, 12289, 12287, 12272, 12254, 12247, 12245, 12242, 12236, 12233, 12219, 12219, 12192, 12192, 12181, 12179, 12175, 12172, 12167, 12158, 12097, 12056, 12047, 12043, 12033, 12008, 11993, 11987, 11948, 11945, 11935, 11921, 11913, 11879, 11858, 11835, 11833, 11832, 11823, 11813, 11808, 11793, 11773, 11760, 11755, 11715, 11695, 11692, 11688, 11668, 11667, 11662, 11654, 11654, 11649, 11643, 11629, 11625, 11607, 11598, 11596, 11581, 11577, 11576, 11534, 11518, 11515, 11485, 11471, 11456, 11450, 11440, 11420, 11420, 11409, 11374, 11368, 11313, 11284, 11246, 11228, 11219, 11216, 11214, 11213, 11182, 11166, 11159, 11133, 11096, 11076, 11069, 11045, 11000, 10968, 10967, 10953, 10953, 10949, 10939, 10923, 10892, 10890, 10882, 10879, 10868, 10867, 10866, 10788, 10774, 10713, 10710, 10681, 10616, 10592, 10566, 10546, 10534, 10522, 10517, 10482, 10478, 10437, 10431, 10414, 10385, 10268, 10235, 10189, 10174, 10112, 10106, 10079, 10044, 10029, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9991, 9981, 9978, 9963, 9948, 9887, 9883, 9829, 9716, 9586, 9568, 9562, 9530, 9525, 9510, 9448, 9417, 9364, 9363, 9345, 9309, 9151, 9147, 9140, 9072, 9040, 8992, 8905, 8868, 8686, 8665, 8584, 8558, 8305, 8196, 7868, 7491, 7431, 7270, 7219, 7140, 7046, 6928, 5784, 5532, 4992, 3783]
+
+(12, 2010): [16930, 16753, 16530, 16514, 16229, 16131, 15996, 15992, 15860, 15725, 15597, 15581, 15454, 15308, 15074, 15027, 14982, 14916, 14850, 14840, 14825, 14776, 14758, 14717, 14683, 14674, 14630, 14611, 14564, 14557, 14553, 14533, 14533, 14519, 14445, 14431, 14420, 14419, 14394, 14381, 14368, 14366, 14311, 14286, 14271, 14234, 14099, 14095, 14091, 14017, 13994, 13980, 13915, 13899, 13878, 13877, 13871, 13780, 13768, 13691, 13648, 13633, 13617, 13605, 13600, 13600, 13597, 13594, 13577, 13577, 13539, 13522, 13517, 13490, 13479, 13449, 13419, 13417, 13379, 13364, 13362, 13360, 13349, 13345, 13342, 13326, 13294, 13284, 13267, 13264, 13252, 13244, 13238, 13191, 13186, 13133, 13129, 13104, 13100, 13099, 13080, 13067, 13066, 13057, 13055, 13050, 13047, 13040, 13032, 13017, 13008, 13005, 12949, 12939, 12931, 12927, 12916, 12872, 12866, 12858, 12853, 12817, 12810, 12788, 12787, 12772, 12766, 12763, 12737, 12732, 12725, 12722, 12715, 12694, 12630, 12627, 12618, 12615, 12607, 12582, 12569, 12523, 12492, 12471, 12469, 12466, 12436, 12424, 12409, 12405, 12400, 12400, 12391, 12383, 12382, 12382, 12356, 12352, 12347, 12339, 12339, 12332, 12326, 12277, 12270, 12267, 12252, 12248, 12239, 12216, 12215, 12187, 12177, 12173, 12168, 12168, 12166, 12138, 12126, 12106, 12090, 12089, 12083, 12080, 12073, 12054, 12052, 12034, 12031, 11991, 11986, 11975, 11940, 11901, 11899, 11860, 11854, 11853, 11847, 11821, 11758, 11731, 11713, 11707, 11665, 11654, 11629, 11539, 11536, 11490, 11487, 11451, 11396, 11384, 11377, 11348, 11267, 11259, 11255, 11247, 11200, 11175, 11170, 11110, 11105, 11065, 11009, 11002, 10996, 10987, 10982, 10978, 10972, 10970, 10956, 10880, 10850, 10839, 10812, 10781, 10775, 10775, 10680, 10662, 10659, 10613, 10584, 10568, 10552, 10521, 10520, 10496, 10488, 10433, 10233, 10200, 10123, 10102, 10055, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9999, 9981, 9969, 9913, 9883, 9857, 9790, 9760, 9732, 9544, 9523, 9489, 9426, 9420, 9251, 9213, 9200, 9009, 8714, 8652, 7173]
+
+(6, 2011): [29838, 28968, 27582, 26267, 25546, 25253, 24896, 24486, 24466, 23553, 22142, 21697, 21659, 21434, 21381, 21096, 20669, 20605, 20375, 20334, 20304, 20290, 20146, 20098, 20016, 19838, 19701, 19525, 19331, 19320, 19148, 18849, 18606, 18594, 18461, 18453, 18432, 18329, 18175, 18094, 18055, 18016, 17961, 17953, 17934, 17881, 17797, 17795, 17786, 17730, 17681, 17646, 17616, 17561, 17538, 17517, 17461, 17455, 17354, 17338, 17324, 17317, 17306, 17304, 17291, 17290, 17234, 17162, 17112, 17099, 17091, 17077, 17055, 17036, 17005, 17004, 16996, 16961, 16952, 16871, 16871, 16865, 16783, 16759, 16752, 16729, 16699, 16638, 16634, 16582, 16564, 16543, 16536, 16535, 16532, 16499, 16492, 16486, 16428, 16396, 16385, 16329, 16316, 16280, 16279, 16248, 16229, 16216, 16192, 16172, 16140, 16135, 16110, 16106, 16058, 16054, 16046, 15983, 15963, 15959, 15950, 15940, 15938, 15919, 15914, 15907, 15906, 15888, 15857, 15855, 15833, 15830, 15781, 15774, 15769, 15769, 15765, 15745, 15739, 15704, 15688, 15618, 15615, 15600, 15596, 15593, 15593, 15584, 15552, 15550, 15538, 15533, 15530, 15523, 15497, 15495, 15494, 15492, 15485, 15483, 15479, 15475, 15458, 15435, 15428, 15428, 15414, 15408, 15378, 15373, 15362, 15359, 15350, 15348, 15336, 15327, 15327, 15321, 15310, 15289, 15282, 15267, 15247, 15244, 15238, 15225, 15174, 15156, 15153, 15152, 15130, 15093, 15070, 15060, 15050, 15040, 15036, 15026, 14990, 14961, 14950, 14925, 14881, 14875, 14863, 14859, 14841, 14828, 14826, 14823, 14820, 14814, 14807, 14790, 14789, 14763, 14742, 14643, 14639, 14618, 14593, 14572, 14560, 14557, 14525, 14473, 14434, 14400, 14393, 14376, 14376, 14300, 14287, 14216, 14213, 14173, 14163, 14161, 14103, 14077, 14065, 13984, 13967, 13961, 13957, 13956, 13931, 13920, 13917, 13845, 13821, 13760, 13738, 13533, 13528, 13483, 13467, 13433, 13311, 13282, 13279, 13273, 13155, 13000, 12957, 12951, 12948, 12806, 12745, 12668, 12595, 12536, 12514, 12495, 12316, 12220, 11897, 11607, 11476, 11407, 11382, 10702, 10531, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9070]
+
+(12, 2011): [31834, 31666, 29082, 28993, 27134, 25967, 25813, 25518, 25326, 25133, 25034, 24919, 24863, 24789, 24643, 24498, 23895, 23838, 23819, 23791, 23781, 23684, 23676, 23528, 23316, 23243, 23193, 23128, 23071, 22999, 22898, 22749, 22679, 22562, 22554, 22294, 22165, 22155, 22153, 21996, 21989, 21791, 21779, 21643, 21623, 21608, 21602, 21577, 21451, 21432, 21393, 21387, 21360, 21334, 21261, 21229, 21201, 21102, 20970, 20878, 20870, 20484, 20470, 20464, 20451, 20443, 20418, 20416, 20328, 20310, 20300, 20253, 20243, 20240, 20237, 20190, 20189, 20176, 20137, 20136, 20070, 20023, 19901, 19845, 19844, 19820, 19754, 19615, 19586, 19545, 19367, 19332, 19330, 19318, 19299, 19294, 19037, 18970, 18943, 18943, 18886, 18879, 18837, 18825, 18818, 18719, 18637, 18625, 18529, 18481, 18455, 18450, 18342, 18285, 18277, 18161, 18143, 18142, 18109, 18107, 18048, 18029, 18024, 17973, 17948, 17902, 17850, 17808, 17780, 17779, 17763, 17742, 17737, 17698, 17688, 17684, 17652, 17644, 17640, 17613, 17597, 17563, 17489, 17475, 17449, 17410, 17406, 17320, 17309, 17298, 17251, 17240, 17237, 17234, 17224, 17196, 17155, 17154, 17150, 17135, 17057, 17031, 17024, 16989, 16859, 16853, 16844, 16763, 16743, 16711, 16702, 16664, 16552, 16500, 16491, 16465, 16448, 16426, 16413, 16406, 16293, 16282, 16249, 16230, 16172, 16132, 16130, 16109, 16010, 15993, 15964, 15953, 15931, 15909, 15903, 15875, 15846, 15801, 15790, 15697, 15657, 15631, 15577, 15571, 15538, 15522, 15496, 15478, 15433, 15313, 15253, 15238, 15216, 15201, 15195, 15140, 15116, 15076, 15046, 15041, 15021, 15016, 14969, 14966, 14932, 14919, 14912, 14871, 14862, 14859, 14829, 14824, 14819, 14776, 14752, 14732, 14705, 14670, 14663, 14662, 14636, 14568, 14557, 14534, 14428, 14413, 14385, 14381, 14303, 14294, 14250, 14127, 14105, 14073, 13923, 13917, 13908, 13897, 13862, 13786, 13734, 13643, 13631, 13619, 13614, 13598, 13547, 13502, 13475, 13470, 13434, 13409, 13369, 13367, 13286, 13208, 13199, 13114, 12896, 12832, 12810, 12760, 12694, 12593, 12266, 12178, 11960, 11769, 11602, 10909, 10022, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000]
+
+(6, 2012): [25168, 24292, 23513, 23088, 22391, 22067, 21660, 21309, 21272, 21163, 21121, 20771, 20673, 20248, 20210, 20207, 20127, 20115, 20083, 20007, 19821, 19776, 19767, 19480, 19479, 19447, 19370, 19359, 19330, 19283, 19280, 19279, 18963, 18936, 18765, 18665, 18640, 18627, 18544, 18526, 18414, 18338, 18280, 18161, 18138, 18088, 18064, 18051, 17959, 17948, 17941, 17863, 17832, 17816, 17813, 17756, 17733, 17699, 17690, 17651, 17567, 17527, 17517, 17472, 17447, 17364, 17359, 17343, 17244, 17201, 17200, 17199, 17190, 17188, 17130, 17114, 17104, 17021, 17000, 16963, 16957, 16887, 16845, 16810, 16711, 16707, 16705, 16697, 16672, 16643, 16628, 16611, 16557, 16485, 16448, 16377, 16376, 16354, 16343, 16297, 16279, 16272, 16237, 16217, 16214, 16188, 16154, 16109, 16069, 16059, 16023, 16023, 16008, 16003, 16000, 15960, 15942, 15913, 15903, 15873, 15840, 15829, 15803, 15761, 15749, 15744, 15694, 15679, 15663, 15657, 15649, 15637, 15634, 15610, 15576, 15561, 15561, 15477, 15468, 15458, 15446, 15425, 15407, 15384, 15376, 15349, 15239, 15236, 15224, 15224, 15214, 15204, 15187, 15179, 15179, 15125, 15106, 15090, 15083, 15067, 15063, 15055, 14991, 14987, 14959, 14948, 14942, 14904, 14897, 14889, 14876, 14874, 14867, 14847, 14814, 14806, 14804, 14802, 14801, 14790, 14786, 14772, 14771, 14768, 14754, 14713, 14711, 14706, 14676, 14647, 14630, 14627, 14597, 14592, 14588, 14554, 14546, 14509, 14508, 14479, 14471, 14455, 14444, 14406, 14402, 14401, 14381, 14345, 14309, 14293, 14286, 14279, 14272, 14269, 14244, 14217, 14213, 14210, 14185, 14164, 14108, 14046, 14031, 14010, 14000, 13969, 13950, 13908, 13900, 13883, 13872, 13857, 13772, 13767, 13759, 13755, 13739, 13723, 13701, 13689, 13653, 13635, 13632, 13631, 13617, 13597, 13525, 13517, 13500, 13493, 13469, 13398, 13396, 13374, 13364, 13357, 13309, 13283, 13273, 13121, 13121, 13106, 13058, 13057, 13036, 13000, 12991, 12963, 12945, 12917, 12901, 12865, 12791, 12752, 12668, 12452, 12341, 12224, 12176, 12104, 12101, 11974, 11953, 11871, 11531, 11461, 11431, 11402, 11134, 11066, 10511, 10387, 10168, 10000, 10000, 10000, 10000, 10000, 10000, 10000]
+
+(12, 2012): [29799, 19145, 18716, 18625, 18288, 18279, 18162, 18134, 17835, 17744, 17743, 17724, 17623, 17589, 17536, 17451, 17289, 17228, 17224, 17157, 17139, 16990, 16983, 16894, 16778, 16694, 16688, 16609, 16492, 16418, 16365, 16154, 16146, 16064, 16036, 16008, 15989, 15965, 15939, 15907, 15863, 15808, 15793, 15730, 15690, 15682, 15655, 15590, 15578, 15561, 15532, 15527, 15500, 15492, 15397, 15386, 15353, 15344, 15334, 15316, 15279, 15276, 15269, 15263, 15248, 15242, 15236, 15217, 15189, 15173, 15099, 15076, 15074, 15062, 15050, 15008, 14984, 14983, 14972, 14972, 14971, 14954, 14897, 14849, 14837, 14793, 14791, 14786, 14779, 14774, 14771, 14729, 14691, 14682, 14639, 14615, 14598, 14597, 14582, 14580, 14578, 14569, 14545, 14489, 14465, 14461, 14443, 14413, 14379, 14373, 14340, 14322, 14298, 14289, 14283, 14190, 14187, 14173, 14167, 14145, 14143, 14078, 14078, 14069, 14051, 14047, 14043, 14037, 14011, 14008, 13987, 13979, 13969, 13949, 13927, 13915, 13868, 13866, 13864, 13849, 13846, 13842, 13834, 13802, 13779, 13776, 13704, 13687, 13672, 13668, 13629, 13627, 13596, 13579, 13570, 13570, 13566, 13521, 13520, 13492, 13490, 13480, 13467, 13430, 13416, 13375, 13348, 13324, 13304, 13301, 13294, 13283, 13270, 13258, 13245, 13237, 13227, 13192, 13178, 13157, 13112, 13110, 13102, 13092, 13084, 13072, 13063, 13050, 13031, 13025, 13024, 13023, 13002, 12979, 12954, 12916, 12911, 12901, 12886, 12878, 12867, 12866, 12848, 12838, 12836, 12817, 12811, 12761, 12736, 12624, 12602, 12596, 12594, 12591, 12570, 12565, 12520, 12500, 12487, 12461, 12458, 12445, 12436, 12429, 12374, 12347, 12310, 12304, 12286, 12261, 12258, 12253, 12249, 12207, 12169, 12164, 12143, 12136, 12108, 12105, 12096, 12090, 12015, 12003, 11999, 11996, 11993, 11979, 11967, 11957, 11942, 11888, 11885, 11858, 11847, 11826, 11804, 11781, 11757, 11735, 11734, 11734, 11710, 11702, 11694, 11668, 11594, 11592, 11561, 11513, 11500, 11485, 11466, 11397, 11376, 11329, 11274, 11070, 10978, 10783, 10748, 10741, 10379, 10103, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000]
+
+(6, 2013): [18080, 17740, 17497, 17473, 17245, 16302, 15892, 15621, 15380, 15345, 15279, 15067, 15020, 14919, 14861, 14845, 14823, 14742, 14738, 14356, 14299, 14217, 14201, 14164, 14048, 14036, 13949, 13897, 13877, 13868, 13847, 13832, 13743, 13740, 13715, 13686, 13677, 13631, 13620, 13576, 13575, 13552, 13516, 13498, 13497, 13473, 13464, 13458, 13456, 13450, 13444, 13433, 13376, 13371, 13352, 13349, 13310, 13306, 13299, 13285, 13268, 13189, 13186, 13185, 13153, 13131, 13071, 13040, 13024, 13016, 13000, 12899, 12880, 12860, 12811, 12790, 12762, 12739, 12736, 12709, 12694, 12670, 12668, 12662, 12615, 12594, 12575, 12572, 12553, 12500, 12431, 12430, 12427, 12413, 12386, 12371, 12343, 12318, 12308, 12298, 12296, 12231, 12224, 12208, 12197, 12164, 12154, 12138, 12120, 12091, 12077, 12069, 12051, 12035, 11991, 11976, 11932, 11931, 11914, 11904, 11885, 11880, 11875, 11873, 11871, 11847, 11837, 11799, 11749, 11748, 11741, 11689, 11668, 11622, 11621, 11570, 11557, 11556, 11536, 11521, 11517, 11499, 11477, 11477, 11475, 11442, 11413, 11400, 11373, 11372, 11336, 11332, 11290, 11272, 11258, 11230, 11216, 11208, 11203, 11200, 11184, 11167, 11160, 11150, 11148, 11109, 11102, 11099, 11093, 11045, 11039, 11030, 11030, 11003, 10997, 10989, 10981, 10927, 10896, 10870, 10853, 10849, 10784, 10756, 10740, 10734, 10728, 10728, 10726, 10702, 10665, 10662, 10639, 10612, 10604, 10590, 10589, 10577, 10528, 10517, 10514, 10422, 10418, 10399, 10398, 10389, 10384, 10378, 10341, 10312, 10312, 10294, 10278, 10273, 10259, 10256, 10256, 10247, 10239, 10199, 10195, 10172, 10152, 10147, 10120, 10113, 10108, 10106, 10101, 10090, 10084, 10049, 10020, 10006, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9984, 9971, 9971, 9970, 9963, 9932, 9910, 9880, 9845, 9837, 9834, 9792, 9732, 9728, 9720, 9718, 9686, 9622, 9589, 9563, 9469, 9439, 9409, 9406, 9301, 9280, 9145, 9055, 9027, 9025, 8882, 8834, 8823, 8803, 8752, 8667, 8597, 8572, 8529, 8446, 8259, 7751, 7603, 7552, 7155]
+
+(12, 2013): [15475, 15350, 15243, 15238, 15154, 15030, 14879, 14842, 14806, 14775, 14761, 14666, 14640, 14376, 14345, 14250, 14106, 14091, 14011, 13822, 13784, 13771, 13653, 13583, 13546, 13504, 13480, 13429, 13423, 13266, 13200, 13186, 13155, 13109, 13106, 13049, 12984, 12965, 12954, 12945, 12942, 12938, 12908, 12908, 12908, 12892, 12890, 12886, 12848, 12843, 12840, 12803, 12759, 12752, 12740, 12729, 12711, 12706, 12693, 12663, 12637, 12591, 12515, 12495, 12482, 12466, 12437, 12424, 12420, 12419, 12417, 12415, 12390, 12380, 12360, 12353, 12335, 12325, 12253, 12206, 12203, 12201, 12200, 12138, 12130, 12128, 12115, 12082, 12073, 12070, 12055, 12037, 12027, 12023, 12017, 11975, 11969, 11959, 11930, 11920, 11917, 11851, 11848, 11842, 11828, 11809, 11785, 11767, 11766, 11763, 11760, 11756, 11742, 11693, 11685, 11680, 11676, 11665, 11613, 11607, 11594, 11567, 11557, 11552, 11537, 11534, 11518, 11512, 11503, 11465, 11451, 11429, 11422, 11418, 11414, 11410, 11385, 11349, 11329, 11325, 11317, 11305, 11303, 11299, 11290, 11284, 11275, 11259, 11234, 11228, 11216, 11156, 11144, 11124, 11093, 11064, 11037, 11034, 11029, 11012, 10987, 10977, 10974, 10972, 10967, 10961, 10952, 10943, 10931, 10918, 10915, 10873, 10857, 10856, 10846, 10799, 10798, 10789, 10745, 10738, 10688, 10687, 10681, 10596, 10577, 10551, 10494, 10490, 10460, 10443, 10433, 10433, 10344, 10294, 10289, 10269, 10263, 10253, 10218, 10180, 10148, 10138, 10132, 10117, 10110, 10110, 10108, 10090, 10084, 10069, 10057, 10039, 10024, 10019, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9956, 9942, 9940, 9935, 9911, 9908, 9881, 9875, 9863, 9858, 9840, 9807, 9740, 9707, 9697, 9670, 9643, 9622, 9615, 9557, 9528, 9518, 9513, 9481, 9472, 9453, 9428, 9426, 9393, 9263, 9249, 9207, 9197, 9135, 9042, 8963, 8893, 8845, 8805, 8791, 8657, 8583, 8478, 8467, 8439, 8438, 8289, 8288, 8254, 8221, 8051, 8001, 7354, 7275, 7246, 7054, 5339]
+
+(6, 2014): [18849, 16293, 16170, 16058, 15896, 15873, 15491, 15428, 15331, 15282, 15201, 15151, 15048, 14973, 14930, 14905, 14756, 14623, 14601, 14516, 14413, 14356, 14331, 14315, 14293, 14263, 14234, 14229, 14046, 14035, 13943, 13929, 13924, 13876, 13820, 13798, 13695, 13679, 13673, 13666, 13655, 13605, 13589, 13545, 13511, 13503, 13470, 13442, 13430, 13419, 13416, 13416, 13410, 13394, 13386, 13375, 13288, 13278, 13204, 13185, 13174, 13166, 13154, 13152, 13137, 13111, 13110, 13094, 13053, 13037, 12982, 12976, 12972, 12904, 12867, 12862, 12845, 12834, 12819, 12805, 12802, 12756, 12748, 12743, 12737, 12737, 12736, 12607, 12601, 12596, 12581, 12552, 12542, 12505, 12496, 12483, 12460, 12295, 12255, 12232, 12210, 12187, 12186, 12135, 12129, 12118, 12103, 12063, 12051, 12019, 11996, 11981, 11973, 11970, 11964, 11956, 11936, 11914, 11889, 11873, 11854, 11825, 11793, 11792, 11767, 11730, 11729, 11660, 11654, 11649, 11614, 11538, 11467, 11465, 11460, 11434, 11429, 11419, 11358, 11330, 11313, 11301, 11291, 11291, 11279, 11257, 11229, 11188, 11160, 11158, 11128, 11126, 11095, 11073, 11039, 10966, 10937, 10918, 10908, 10904, 10894, 10881, 10863, 10851, 10841, 10815, 10802, 10768, 10756, 10709, 10697, 10685, 10681, 10680, 10680, 10670, 10657, 10563, 10528, 10527, 10526, 10520, 10495, 10427, 10423, 10417, 10391, 10384, 10379, 10379, 10346, 10344, 10340, 10263, 10248, 10224, 10209, 10158, 10156, 10124, 10121, 10087, 10086, 10048, 10037, 10031, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9976, 9943, 9927, 9921, 9913, 9912, 9910, 9909, 9903, 9888, 9858, 9850, 9788, 9783, 9765, 9757, 9738, 9708, 9655, 9649, 9576, 9525, 9421, 9367, 9361, 9355, 9328, 9252, 9181, 9150, 9143, 9143, 9129, 9123, 9074, 9065, 9042, 9041, 9020, 9000, 8971, 8969, 8928, 8896, 8851, 8799, 8746, 8746, 8743, 8735, 8720, 8672, 8622, 8620, 8593, 8529, 8508, 8476, 8420, 8408, 8368, 8162, 7387, 7360, 7109, 6750]
+
+(12, 2014): [24808, 21434, 20324, 20212, 19961, 19888, 19442, 19216, 19098, 18518, 18446, 18108, 17966, 17902, 17847, 17844, 17614, 17582, 17570, 17512, 17511, 17447, 17380, 17352, 17317, 17277, 17270, 17252, 17219, 17145, 17142, 17114, 17110, 17042, 17005, 17001, 16857, 16836, 16815, 16798, 16792, 16789, 16751, 16708, 16708, 16708, 16679, 16675, 16673, 16657, 16582, 16576, 16481, 16469, 16467, 16415, 16359, 16329, 16324, 16323, 16281, 16209, 16157, 16106, 16094, 16088, 16060, 16027, 16013, 16010, 16001, 15977, 15934, 15925, 15917, 15907, 15857, 15856, 15856, 15855, 15834, 15815, 15687, 15607, 15605, 15582, 15561, 15529, 15515, 15493, 15469, 15466, 15456, 15447, 15428, 15374, 15337, 15331, 15326, 15299, 15296, 15290, 15286, 15222, 15220, 15217, 15204, 15190, 15115, 15109, 15106, 15100, 15095, 15085, 15069, 15037, 15015, 14970, 14959, 14936, 14920, 14919, 14869, 14858, 14809, 14807, 14785, 14775, 14753, 14752, 14725, 14721, 14696, 14618, 14610, 14596, 14560, 14547, 14541, 14532, 14512, 14477, 14427, 14388, 14373, 14349, 14307, 14290, 14285, 14274, 14273, 14264, 14253, 14224, 14206, 14158, 14118, 14081, 14031, 14026, 14024, 14015, 14004, 13961, 13957, 13851, 13806, 13798, 13796, 13780, 13745, 13739, 13731, 13707, 13689, 13675, 13636, 13614, 13594, 13553, 13525, 13501, 13424, 13396, 13396, 13390, 13336, 13326, 13279, 13251, 13221, 13216, 13197, 13177, 13154, 13151, 13149, 13131, 13096, 12953, 12899, 12891, 12888, 12884, 12811, 12762, 12741, 12730, 12724, 12720, 12694, 12669, 12637, 12634, 12633, 12627, 12615, 12594, 12585, 12576, 12555, 12537, 12500, 12414, 12404, 12348, 12314, 12277, 12227, 12207, 12176, 12163, 12147, 12034, 12027, 11988, 11896, 11878, 11868, 11769, 11739, 11730, 11719, 11701, 11618, 11615, 11596, 11585, 11411, 11390, 11383, 11372, 11333, 11286, 11236, 11196, 11095, 11082, 11081, 10990, 10706, 10557, 10502, 10193, 10126, 10087, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9852, 9538, 9503]
+
+(6, 2015): [29006, 28632, 27210, 25115, 19690, 19671, 19670, 18749, 18542, 18450, 18438, 18407, 18286, 17881, 17458, 17457, 17053, 17010, 16884, 16862, 16713, 16704, 16695, 16692, 16598, 16577, 16570, 16534, 16494, 16285, 16279, 16252, 16245, 16184, 16184, 16160, 16073, 16059, 16049, 16048, 16010, 16007, 15970, 15962, 15945, 15940, 15940, 15891, 15890, 15887, 15878, 15876, 15857, 15854, 15846, 15839, 15828, 15764, 15737, 15734, 15734, 15712, 15704, 15695, 15663, 15662, 15655, 15650, 15634, 15625, 15612, 15595, 15585, 15576, 15548, 15543, 15531, 15531, 15519, 15506, 15502, 15466, 15459, 15455, 15435, 15423, 15408, 15408, 15403, 15398, 15373, 15368, 15360, 15294, 15272, 15262, 15258, 15256, 15236, 15228, 15209, 15193, 15170, 15154, 15148, 15143, 15074, 15069, 15064, 15027, 15014, 14958, 14923, 14920, 14905, 14887, 14850, 14846, 14836, 14831, 14810, 14796, 14781, 14779, 14778, 14772, 14749, 14749, 14747, 14732, 14718, 14708, 14707, 14675, 14653, 14641, 14629, 14629, 14612, 14609, 14603, 14590, 14578, 14575, 14572, 14539, 14513, 14512, 14505, 14479, 14473, 14457, 14454, 14418, 14415, 14408, 14384, 14379, 14372, 14372, 14358, 14357, 14342, 14321, 14277, 14235, 14216, 14205, 14199, 14196, 14186, 14173, 14169, 14141, 14132, 14126, 14112, 14106, 14102, 14070, 14053, 14014, 14011, 13977, 13923, 13905, 13894, 13887, 13872, 13838, 13831, 13790, 13788, 13782, 13773, 13762, 13757, 13731, 13715, 13701, 13681, 13615, 13474, 13466, 13464, 13447, 13445, 13442, 13424, 13422, 13416, 13416, 13415, 13413, 13412, 13408, 13406, 13317, 13299, 13269, 13223, 13213, 13202, 13164, 13119, 13119, 13085, 13010, 12990, 12946, 12942, 12886, 12852, 12796, 12737, 12710, 12688, 12634, 12524, 12264, 12230, 12208, 12159, 12148, 12148, 12125, 11979, 11756, 11666, 11481, 11444, 11205, 10707, 10457, 10368, 10350, 10168, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9630, 9598]
+
+(12, 2015): [35728, 29523, 29218, 28056, 28028, 27069, 27051, 23758, 22481, 22476, 22453, 22448, 22430, 22350, 22320, 22320, 22316, 22310, 22306, 22306, 22301, 22295, 22258, 22248, 22245, 22239, 22234, 22233, 22224, 22197, 22150, 22141, 22104, 22037, 21999, 21622, 21214, 20933, 20925, 20725, 20550, 20548, 20416, 20317, 20305, 20251, 20227, 20193, 19887, 19806, 19804, 19762, 19748, 19735, 19701, 19623, 19448, 19433, 19413, 19356, 19339, 19336, 19310, 19255, 19237, 19235, 19227, 19216, 19208, 19200, 19173, 19058, 19053, 19021, 18978, 18961, 18936, 18878, 18852, 18753, 18751, 18738, 18714, 18667, 18576, 18533, 18490, 18440, 18438, 18433, 18349, 18178, 18124, 18103, 18076, 18016, 17998, 17910, 17899, 17874, 17842, 17822, 17816, 17742, 17712, 17698, 17654, 17653, 17530, 17527, 17497, 17491, 17337, 17322, 17235, 17228, 17227, 17155, 17134, 17122, 17120, 17106, 17093, 17092, 17001, 16978, 16961, 16960, 16928, 16882, 16877, 16869, 16838, 16759, 16751, 16676, 16659, 16651, 16613, 16610, 16603, 16588, 16545, 16526, 16500, 16446, 16429, 16399, 16392, 16388, 16376, 16376, 16346, 16319, 16317, 16298, 16296, 16287, 16249, 16187, 16132, 16117, 16060, 16046, 16016, 15986, 15948, 15944, 15940, 15935, 15911, 15905, 15886, 15864, 15858, 15808, 15729, 15719, 15644, 15619, 15604, 15594, 15593, 15587, 15553, 15533, 15419, 15419, 15369, 15366, 15319, 15316, 15212, 15114, 15112, 15104, 15087, 15087, 15021, 14981, 14980, 14966, 14814, 14751, 14723, 14681, 14629, 14558, 14419, 14415, 14396, 14379, 14287, 14250, 14227, 14191, 14080, 14016, 14008, 14003, 13978, 13863, 13830, 13816, 13777, 13645, 13596, 13532, 13461, 13444, 13441, 13419, 13416, 13400, 13373, 13364, 13351, 13332, 13319, 13289, 13261, 13176, 13150, 13133, 13072, 13042, 12942, 12879, 12856, 12803, 12715, 12620, 12388, 12323, 12266, 12264, 12011, 11846, 11811, 11768, 11636, 11547, 11524, 11465, 11428, 11363, 11355, 11164, 11151, 10856, 10825, 10762, 10652, 10480, 10388, 10086, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9654, 9407, 8504]
+
+(6, 2016): [23023, 22977, 22948, 22947, 22902, 22893, 22841, 22834, 22827, 22816, 22803, 22796, 22796, 22775, 22748, 22741, 22739, 22729, 22724, 22718, 22718, 22709, 22708, 22708, 22701, 22700, 22700, 22696, 22695, 22685, 22682, 22650, 22646, 22646, 22634, 22627, 22615, 22612, 22605, 22586, 22573, 22571, 22564, 22562, 22559, 22544, 22539, 22506, 22493, 22475, 22199, 22130, 22104, 22095, 22041, 21864, 21685, 21621, 21551, 21461, 21376, 21116, 21025, 21005, 20960, 20949, 20854, 20667, 20577, 20552, 20518, 20492, 20420, 20388, 20378, 20352, 20347, 20344, 20202, 20162, 20083, 20072, 19980, 19944, 19892, 19866, 19852, 19801, 19710, 19664, 19661, 19602, 19527, 19516, 19505, 19400, 19305, 19279, 19229, 19206, 19096, 19054, 19037, 19020, 18978, 18940, 18935, 18868, 18862, 18848, 18830, 18795, 18452, 18406, 18345, 18294, 18265, 18112, 18073, 18059, 17943, 17762, 17726, 17647, 17634, 17634, 17605, 17585, 17439, 17396, 17364, 17329, 17301, 17203, 17186, 17180, 17162, 17158, 17123, 17120, 17116, 17111, 16995, 16990, 16990, 16982, 16978, 16956, 16911, 16899, 16895, 16870, 16861, 16732, 16701, 16697, 16689, 16678, 16676, 16657, 16607, 16577, 16551, 16480, 16474, 16465, 16363, 16332, 16259, 16214, 16200, 16197, 16174, 16129, 16048, 15932, 15908, 15893, 15810, 15744, 15738, 15733, 15680, 15508, 15501, 15489, 15464, 15464, 15438, 15419, 15355, 15308, 15285, 15276, 15233, 15220, 15182, 15134, 15079, 14895, 14785, 14745, 14600, 14410, 14406, 14384, 14383, 14267, 14201, 14136, 14132, 14069, 14047, 14018, 13961, 13919, 13853, 13810, 13800, 13775, 13717, 13713, 13678, 13555, 13513, 13452, 13449, 13391, 13329, 13289, 13289, 13199, 13105, 13065, 12851, 12742, 12626, 12598, 12598, 12562, 12561, 12413, 12361, 12324, 12202, 12184, 12172, 12103, 11973, 11962, 11924, 11845, 11798, 11776, 11636, 11381, 11358, 11108, 10987, 10802, 10764, 10726, 10705, 10454, 10452, 10441, 10357, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9915, 9839, 9640, 9637]
+
+(12, 2016): [18078, 17949, 17814, 17807, 17805, 17795, 17792, 17790, 17789, 17789, 17786, 17786, 17783, 17783, 17781, 17781, 17779, 17778, 17777, 17776, 17776, 17776, 17776, 17776, 17775, 17775, 17774, 17774, 17773, 17773, 17772, 17772, 17771, 17771, 17770, 17770, 17768, 17768, 17768, 17768, 17767, 17767, 17767, 17767, 17766, 17766, 17766, 17766, 17766, 17765, 17765, 17765, 17764, 17764, 17764, 17764, 17764, 17763, 17763, 17763, 17763, 17763, 17763, 17763, 17763, 17763, 17763, 17762, 17762, 17762, 17762, 17762, 17762, 17762, 17762, 17762, 17761, 17761, 17761, 17761, 17760, 17760, 17760, 17760, 17760, 17760, 17759, 17759, 17759, 17759, 17759, 17759, 17759, 17758, 17758, 17758, 17758, 17758, 17758, 17758, 17757, 17757, 17757, 17757, 17756, 17756, 17756, 17755, 17755, 17755, 17754, 17754, 17753, 17753, 17753, 17753, 17753, 17753, 17751, 17750, 17747, 17741, 17740, 17736, 17736, 17736, 17736, 17672, 17624, 17575, 17528, 17500, 17381, 17366, 17351, 17209, 17207, 17165, 16804, 16578, 16550, 16530, 16527, 16509, 16478, 16424, 16418, 16413, 16339, 16336, 16335, 16332, 16300, 16290, 16285, 16271, 16259, 16217, 16038, 15999, 15997, 15874, 15864, 15851, 15802, 15772, 15614, 15595, 15574, 15485, 15458, 15457, 15447, 15431, 15427, 15363, 15347, 15242, 15238, 15151, 15048, 15029, 14967, 14947, 14884, 14754, 14738, 14701, 14698, 14548, 14401, 14292, 14205, 14198, 14073, 13990, 13850, 13846, 13739, 13690, 13457, 13438, 13422, 13392, 13166, 13163, 13088, 13058, 13056, 13055, 13036, 13031, 12929, 12914, 12830, 12818, 12807, 12523, 12480, 12474, 12438, 12368, 12281, 12142, 11963, 11873, 11760, 11721, 11537, 11516, 11498, 11454, 11421, 11387, 11385, 11377, 11279, 11262, 11164, 11103, 11036, 10791, 10723, 10628, 10571, 10452, 10403, 10360, 10305, 10271, 10269, 10253, 10214, 10213, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9899, 9498, 9313, 9173, 7177, 7110, 7007, 7004]
+
+(6, 2017): [18192, 17851, 17696, 17377, 17121, 17116, 17048, 16923, 16607, 16597, 16550, 16245, 16218, 16213, 16192, 16058, 16038, 16019, 15855, 15782, 15659, 15520, 15502, 15436, 15422, 15375, 15375, 15354, 15287, 15271, 15249, 15217, 15178, 15176, 15162, 15139, 15137, 15134, 15126, 15111, 15070, 15045, 15024, 14998, 14989, 14983, 14980, 14975, 14948, 14939, 14929, 14912, 14891, 14885, 14885, 14884, 14873, 14871, 14866, 14861, 14856, 14846, 14845, 14840, 14836, 14834, 14831, 14825, 14818, 14803, 14793, 14788, 14777, 14768, 14768, 14764, 14764, 14762, 14760, 14759, 14755, 14751, 14750, 14750, 14750, 14748, 14747, 14739, 14739, 14727, 14724, 14720, 14719, 14719, 14719, 14715, 14707, 14703, 14699, 14679, 14673, 14673, 14671, 14671, 14668, 14668, 14663, 14657, 14656, 14655, 14624, 14613, 14606, 14598, 14590, 14590, 14583, 14572, 14561, 14561, 14561, 14556, 14549, 14537, 14535, 14533, 14531, 14526, 14524, 14524, 14512, 14506, 14506, 14504, 14495, 14479, 14475, 14464, 14450, 14448, 14439, 14430, 14426, 14400, 14344, 14342, 14304, 14300, 14297, 14293, 14267, 14248, 14247, 14216, 14201, 14198, 14185, 14168, 14105, 14081, 14047, 14042, 14018, 13998, 13952, 13942, 13924, 13899, 13781, 13781, 13688, 13682, 13682, 13678, 13674, 13662, 13601, 13584, 13576, 13527, 13509, 13446, 13440, 13406, 13401, 13393, 13375, 13372, 13372, 13367, 13350, 13336, 13310, 13283, 13256, 13249, 13209, 13200, 13125, 13120, 13107, 13052, 13024, 13019, 13017, 12997, 12979, 12970, 12829, 12811, 12743, 12644, 12570, 12564, 12514, 12477, 12468, 12335, 12311, 12304, 12300, 12253, 12194, 12191, 12151, 12093, 12090, 11978, 11946, 11934, 11880, 11870, 11861, 11693, 11595, 11549, 11420, 11420, 11385, 11359, 11300, 11249, 11224, 11074, 11061, 11013, 10681, 10510, 10390, 10365, 10313, 10223, 10198, 10083, 10074, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9801, 9756, 9591]
+
+(12, 2017): [17541, 17515, 17454, 17447, 17302, 17241, 17226, 17177, 17164, 17133, 17130, 17109, 17106, 17075, 16932, 16769, 16590, 16525, 16437, 16415, 16338, 16256, 16241, 16215, 16177, 16129, 16089, 16060, 16051, 15871, 15755, 15755, 15751, 15668, 15660, 15557, 15525, 15489, 15437, 15403, 15361, 15221, 15216, 15190, 15180, 15165, 15154, 15085, 14959, 14796, 14771, 14742, 14738, 14738, 14711, 14708, 14699, 14696, 14683, 14681, 14678, 14676, 14667, 14653, 14642, 14640, 14633, 14631, 14610, 14607, 14606, 14603, 14601, 14597, 14571, 14570, 14567, 14565, 14545, 14545, 14528, 14525, 14525, 14524, 14524, 14504, 14498, 14487, 14486, 14486, 14481, 14480, 14476, 14475, 14462, 14461, 14447, 14445, 14445, 14442, 14433, 14428, 14425, 14417, 14413, 14413, 14411, 14411, 14409, 14400, 14388, 14387, 14374, 14363, 14276, 14263, 14253, 14209, 14173, 14141, 14118, 14118, 14098, 14050, 14045, 14039, 14033, 13938, 13903, 13883, 13878, 13838, 13823, 13805, 13797, 13790, 13789, 13766, 13759, 13683, 13639, 13583, 13576, 13532, 13525, 13524, 13522, 13506, 13482, 13475, 13464, 13456, 13412, 13408, 13407, 13395, 13393, 13390, 13363, 13337, 13320, 13315, 13294, 13275, 13231, 13224, 13133, 13076, 13076, 13058, 13025, 12999, 12972, 12959, 12956, 12948, 12943, 12921, 12912, 12902, 12893, 12887, 12842, 12820, 12797, 12797, 12796, 12761, 12755, 12739, 12717, 12716, 12655, 12633, 12562, 12506, 12440, 12419, 12352, 12349, 12264, 12170, 12160, 12126, 12075, 12015, 11966, 11936, 11881, 11878, 11851, 11815, 11804, 11796, 11745, 11705, 11534, 11531, 11497, 11475, 11461, 11455, 11455, 11411, 11388, 11352, 11350, 11313, 11266, 11229, 11200, 11156, 11143, 11123, 11101, 11061, 10944, 10943, 10881, 10815, 10810, 10744, 10739, 10671, 10546, 10503, 10503, 10495, 10467, 10455, 10318, 10248, 10185, 10184, 10076, 10050, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9985, 9932, 9848, 9747, 9642, 9607, 9558, 9519, 9482, 9478, 9357, 8998, 8937, 8881, 8656, 8227, 8200, 8011, 7927, 7808, 7790]
+
+(6, 2018): [29437, 25019, 24684, 24565, 23974, 23802, 23465, 23377, 22466, 22338, 22112, 22049, 21989, 21983, 21932, 21914, 21838, 21832, 21785, 21678, 21667, 21619, 21538, 21537, 21458, 21434, 21183, 21155, 21042, 20966, 20787, 20575, 20529, 20280, 20275, 20241, 20239, 20233, 20182, 20167, 20166, 20147, 20136, 20125, 19980, 19931, 19823, 19821, 19818, 19809, 19807, 19805, 19804, 19801, 19800, 19797, 19796, 19789, 19788, 19788, 19788, 19788, 19781, 19779, 19779, 19776, 19773, 19772, 19771, 19769, 19760, 19760, 19757, 19757, 19753, 19749, 19744, 19744, 19741, 19741, 19739, 19739, 19734, 19728, 19727, 19727, 19727, 19723, 19718, 19714, 19712, 19707, 19699, 19677, 19645, 19642, 19598, 19592, 19575, 19561, 19561, 19524, 19515, 19498, 19487, 19483, 19450, 19449, 19441, 19435, 19428, 19411, 19408, 19346, 19344, 19326, 19324, 19322, 19269, 19258, 19228, 19228, 19218, 19183, 19171, 19134, 19121, 19111, 19102, 19090, 19046, 19040, 19036, 18948, 18924, 18923, 18906, 18894, 18869, 18868, 18857, 18850, 18848, 18831, 18803, 18757, 18735, 18649, 18593, 18409, 18402, 18364, 18299, 18255, 18173, 18128, 18121, 18116, 18021, 17967, 17931, 17915, 17908, 17897, 17888, 17868, 17833, 17713, 17625, 17564, 17555, 17445, 17430, 17418, 17365, 17331, 17279, 17227, 17193, 17039, 17020, 16907, 16824, 16689, 16656, 16505, 16463, 16451, 16446, 16409, 16380, 16369, 16363, 16311, 16306, 16288, 16248, 16196, 16104, 16066, 16053, 16052, 16017, 15978, 15953, 15904, 15887, 15884, 15868, 15831, 15714, 15678, 15602, 15451, 15288, 15246, 15222, 15220, 15212, 15181, 15165, 15146, 15085, 15057, 15056, 14931, 14914, 14705, 14664, 14664, 14634, 14480, 14468, 14338, 14180, 14179, 14170, 14163, 13991, 13856, 13624, 13576, 13531, 13514, 13339, 12892, 12854, 12810, 12665, 12660, 12651, 12545, 12298, 12222, 12215, 12201, 11814, 11776, 11626, 11483, 11451, 10994, 10774, 10411, 10358, 10011, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9953, 9904, 9681, 9534, 9058, 9042, 9036, 8989, 8942]
+
+(12, 2018): [30254, 26250, 24700, 24206, 23906, 23890, 23865, 23841, 23793, 23682, 23651, 23638, 23610, 23599, 23396, 23358, 23317, 23314, 23239, 23057, 23016, 22867, 22828, 22819, 22679, 22660, 22522, 22476, 22452, 22432, 22366, 22340, 22229, 22177, 22134, 22089, 22074, 22028, 21981, 21871, 21833, 21811, 21809, 21802, 21623, 21556, 21477, 21476, 21448, 21430, 21416, 21253, 21194, 21191, 21173, 21165, 21158, 21105, 20998, 20950, 20926, 20726, 20592, 20486, 20475, 20413, 20355, 20099, 20047, 19889, 19781, 19758, 19643, 19626, 19485, 19417, 19353, 19353, 19338, 19327, 19319, 19317, 19313, 19310, 19308, 19308, 19304, 19283, 19281, 19261, 19236, 19214, 19208, 19158, 19125, 19080, 19077, 19066, 19056, 18965, 18958, 18902, 18877, 18870, 18830, 18774, 18767, 18663, 18658, 18616, 18602, 18502, 18500, 18457, 18430, 18386, 18242, 18137, 17976, 17961, 17957, 17947, 17900, 17835, 17827, 17795, 17770, 17721, 17719, 17654, 17653, 17652, 17626, 17614, 17606, 17591, 17581, 17572, 17571, 17571, 17569, 17568, 17566, 17565, 17565, 17563, 17562, 17561, 17561, 17558, 17557, 17556, 17553, 17552, 17551, 17548, 17547, 17545, 17545, 17545, 17545, 17544, 17543, 17542, 17539, 17537, 17536, 17535, 17532, 17531, 17530, 17530, 17523, 17519, 17516, 17513, 17512, 17512, 17511, 17509, 17508, 17507, 17502, 17501, 17496, 17487, 17423, 17384, 17373, 17366, 17330, 17313, 17228, 17208, 17091, 17019, 17000, 16975, 16965, 16919, 16847, 16828, 16787, 16749, 16707, 16497, 16454, 16453, 16346, 16296, 16272, 16145, 16081, 16071, 16043, 16024, 15857, 15764, 15685, 15658, 15551, 15538, 15532, 15436, 15415, 15366, 15358, 15351, 15265, 15220, 15185, 15137, 15058, 15029, 14992, 14877, 14834, 14787, 14704, 14674, 14659, 14651, 14623, 14566, 14538, 14500, 14407, 14202, 14022, 13977, 13948, 13905, 13873, 13835, 13639, 13562, 13403, 13287, 13005, 12929, 12899, 12863, 12557, 12557, 12425, 12396, 11782, 11552, 11326, 10872, 10326, 10078, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000]
+
+(6, 2019): [24008, 23790, 23716, 23669, 23664, 23640, 23623, 23615, 23524, 23514, 23477, 23291, 23266, 23232, 23163, 23125, 23043, 23040, 22998, 22997, 22861, 22857, 22743, 22699, 22696, 22694, 22652, 22637, 22612, 22599, 22595, 22594, 22591, 22581, 22581, 22558, 22547, 22545, 22538, 22535, 22524, 22499, 22478, 22477, 22472, 22465, 22460, 22459, 22446, 22428, 22418, 22389, 22364, 22341, 22326, 22297, 22275, 22231, 22229, 22226, 22215, 22203, 22187, 22167, 22159, 22154, 22116, 22043, 22038, 22006, 21944, 21922, 21919, 21899, 21895, 21872, 21823, 21821, 21762, 21761, 21702, 21698, 21696, 21622, 21607, 21599, 21592, 21583, 21565, 21522, 21519, 21503, 21460, 21413, 21384, 21379, 21379, 21349, 21346, 21310, 21294, 21294, 21272, 21267, 21230, 21183, 21171, 21123, 21071, 21067, 21063, 20979, 20926, 20911, 20800, 20786, 20784, 20622, 20605, 20571, 20530, 20526, 20516, 20467, 20337, 20238, 20208, 20204, 19961, 19882, 19872, 19870, 19855, 19855, 19819, 19814, 19780, 19764, 19731, 19643, 19599, 19590, 19584, 19434, 19423, 19423, 19346, 19306, 19304, 19286, 19282, 19279, 19154, 19147, 19059, 19037, 19035, 19035, 19033, 19030, 19029, 19008, 18995, 18995, 18985, 18976, 18965, 18920, 18918, 18915, 18859, 18850, 18828, 18755, 18728, 18727, 18710, 18671, 18640, 18567, 18566, 18560, 18500, 18484, 18380, 18354, 18322, 18311, 18306, 18180, 18140, 18118, 18106, 18069, 18046, 18007, 17979, 17965, 17856, 17828, 17723, 17502, 17490, 17465, 17353, 17194, 17048, 16999, 16919, 16884, 16880, 16871, 16868, 16848, 16790, 16668, 16594, 16527, 16479, 16455, 16372, 16363, 16301, 16101, 16032, 15961, 15793, 15776, 15761, 15708, 15693, 15692, 15509, 15307, 15305, 15232, 15201, 15189, 15189, 15146, 15020, 14842, 14651, 14589, 14419, 14193, 14149, 14094, 13991, 13985, 13617, 13503, 13442, 13368, 13359, 13335, 13068, 12906, 12777, 12724, 12654, 12549, 12375, 11428, 11427, 11107, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9600, 8700]
+
+(12, 2019): [20641, 20096, 19429, 19332, 18863, 18441, 18276, 17820, 17532, 17398, 17364, 17358, 17354, 17330, 17211, 17182, 17178, 17135, 17122, 17120, 17119, 17101, 17100, 17097, 17096, 17056, 17052, 17041, 17041, 17032, 17023, 17018, 17010, 17009, 16997, 16993, 16992, 16983, 16980, 16962, 16934, 16927, 16909, 16887, 16860, 16847, 16835, 16831, 16813, 16796, 16774, 16760, 16701, 16701, 16698, 16697, 16694, 16690, 16689, 16662, 16636, 16627, 16621, 16615, 16614, 16569, 16546, 16470, 16432, 16431, 16417, 16404, 16378, 16303, 16246, 16222, 16179, 16168, 16145, 16093, 16004, 15989, 15965, 15954, 15931, 15901, 15900, 15879, 15845, 15804, 15803, 15782, 15780, 15770, 15751, 15700, 15651, 15619, 15609, 15546, 15530, 15529, 15496, 15470, 15453, 15443, 15435, 15431, 15422, 15405, 15394, 15381, 15370, 15339, 15334, 15253, 15227, 15216, 15201, 15196, 15192, 15175, 15172, 15143, 15132, 15128, 15114, 15087, 15087, 15080, 15074, 15062, 15004, 14980, 14943, 14943, 14942, 14939, 14921, 14912, 14908, 14869, 14865, 14856, 14850, 14780, 14778, 14777, 14752, 14742, 14740, 14736, 14736, 14730, 14717, 14704, 14702, 14676, 14672, 14670, 14668, 14658, 14645, 14601, 14586, 14577, 14569, 14546, 14544, 14517, 14501, 14481, 14462, 14451, 14374, 14323, 14310, 14264, 14183, 14162, 14113, 14093, 14060, 14053, 14052, 14022, 13991, 13970, 13970, 13864, 13815, 13782, 13709, 13703, 13697, 13679, 13676, 13645, 13633, 13615, 13570, 13494, 13483, 13456, 13445, 13426, 13418, 13375, 13372, 13345, 13343, 13315, 13314, 13282, 13236, 13226, 13190, 13167, 13148, 13135, 13122, 13119, 13112, 13111, 13070, 13068, 13059, 13042, 13035, 13030, 13014, 13013, 13000, 12993, 12991, 12911, 12904, 12891, 12871, 12869, 12839, 12811, 12781, 12761, 12685, 12669, 12640, 12505, 12492, 12416, 12265, 12150, 12128, 11875, 11824, 11801, 11764, 11703, 11430, 11426, 11420, 11226, 11209, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9289, 9191, 9012, 8937, 8809, 8754, 8333, 7544]
+
+(6, 2020): [20890, 16562, 16485, 16462, 16459, 16247, 16221, 16131, 16118, 15980, 15925, 15601, 15338, 15311, 15275, 15241, 15216, 15074, 15062, 14952, 14881, 14877, 14675, 14613, 14611, 14401, 14394, 14375, 14351, 14345, 14333, 14316, 14267, 14229, 14218, 14066, 13957, 13894, 13785, 13726, 13692, 13660, 13601, 13586, 13581, 13520, 13503, 13441, 13404, 13375, 13363, 13350, 13309, 13261, 13183, 13181, 13110, 13087, 13082, 13070, 13053, 13032, 12981, 12942, 12934, 12842, 12788, 12775, 12756, 12748, 12729, 12726, 12710, 12692, 12684, 12683, 12674, 12648, 12632, 12619, 12618, 12597, 12591, 12572, 12533, 12529, 12522, 12503, 12492, 12448, 12443, 12438, 12416, 12389, 12380, 12270, 12235, 12212, 12207, 12122, 12107, 12106, 12095, 12089, 12079, 12075, 12061, 12059, 12040, 12040, 12040, 12036, 12033, 12024, 12012, 12007, 11974, 11972, 11964, 11954, 11954, 11949, 11943, 11939, 11933, 11927, 11920, 11916, 11909, 11906, 11896, 11889, 11888, 11888, 11872, 11870, 11862, 11844, 11841, 11837, 11832, 11832, 11832, 11824, 11794, 11760, 11740, 11738, 11718, 11702, 11696, 11695, 11694, 11674, 11673, 11672, 11668, 11667, 11660, 11658, 11655, 11646, 11646, 11646, 11643, 11634, 11630, 11625, 11625, 11624, 11617, 11613, 11608, 11590, 11583, 11578, 11573, 11573, 11567, 11559, 11552, 11526, 11515, 11510, 11504, 11502, 11501, 11497, 11496, 11479, 11415, 11340, 11329, 11273, 11257, 11176, 11141, 11128, 11120, 11068, 11054, 11046, 11033, 11023, 11009, 10916, 10903, 10894, 10818, 10759, 10746, 10601, 10598, 10591, 10587, 10568, 10565, 10553, 10530, 10508, 10495, 10443, 10427, 10425, 10407, 10392, 10380, 10342, 10308, 10295, 10292, 10279, 10276, 10193, 10184, 10124, 10124, 10075, 10075, 10020, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 10000, 9926, 9882, 9841, 9823, 9820, 9811, 9790, 9762, 9757, 9722, 9721, 9718, 9679, 9650, 9611, 9488, 9357, 9327, 9254, 8596, 8587, 8386, 8355, 8334, 8325, 8223, 8160, 5993, 5992]
+
+==================================================================
+BEST AGENT:
+AgentReport(profit=(396.7624472728585,),
+            number_of_transactions=9,
+            average_transaction_amount=2259.6402719192065,
+            multiplier=0.30722326771436814,
+            courage=0.5518224612738823,
+            invested_companies=3,
+            sector_biases={'AUTOMOTIVE': 0.4945335353859816,
+                           'BANKING': 0.5160124180318092,
+                           'ENERGY': 0.7505727618903173,
+                           'FOOD': 0.5001275936823805,
+                           'HEALTHCARE': 0.6685896409295591,
+                           'MEDIA': 0.5532138072973746,
+                           'RETAIL': 0.4889761815866155,
+                           'SOFTWARE': 0.5232449605079104,
+                           'TECHNOLOGY': 0.5500394773036379,
+                           'TELECOMUNICATION': 0.5305580345668408},
+            bought_stocks={'AAPL': 2611, 'MSFT': 3494, 'PFE': 3835})

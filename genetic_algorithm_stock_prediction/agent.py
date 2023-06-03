@@ -32,7 +32,7 @@ class AgentReport:
     courage: float
     invested_companies: list[str]
     sector_biases: list[float]
-    favourite_stocks: dict[str, float]
+    bought_stocks: dict[str, float]
 
 
 class AgentInputs(NamedTuple):
@@ -101,7 +101,7 @@ class AgentInputs(NamedTuple):
 
         child = (father_arr + mother_arr) / 2
 
-        noise = np.random.random_sample(FIELDS_TO_MUTATE) * 2 - 1
+        noise = np.random.random_sample(FIELDS_TO_MUTATE)
         noise *= MUTATION
 
         fields_to_change = np.random.choice(
@@ -193,16 +193,21 @@ class Agent:
 
         return min(1, max(-1, decision))
 
+    @property
+    def profit(self):
+        return self._bookkeeper.balance - self._start_balance,
+
+
     def get_report(self) -> AgentReport:
         return AgentReport(
-            profit=self._bookkeeper.balance - self._start_balance,
+            profit=self.profit,
             number_of_transactions=self._bookkeeper.number_of_transactions,
             average_transaction_amount=self._bookkeeper.average_transaction,
             multiplier=self._inputs.amount_multiplier,
             courage=self._inputs.courage,
             invested_companies=self._bookkeeper.number_of_invested_companies,
             sector_biases=self._inputs.sector_biases,
-            favourite_stocks=self._bookkeeper.companies_by_invested_amount,
+            bought_stocks=self._bookkeeper.companies_by_invested_amount,
         )
 
     def close_positions(self, month: Month, year: Year) -> None:

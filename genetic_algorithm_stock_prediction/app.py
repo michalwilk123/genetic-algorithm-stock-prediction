@@ -2,7 +2,7 @@ from genetic_algorithm_stock_prediction.agent import Agent
 from genetic_algorithm_stock_prediction.constants import SimulationProps
 from genetic_algorithm_stock_prediction.model import StockGeneticAlgorithmModel
 from genetic_algorithm_stock_prediction.utils import create_month_year_generator, calculate_next_date
-
+from pprint import pprint
 
 def display_best_children_stats(children: list[Agent]):
     for agent in children:
@@ -26,4 +26,4 @@ def run():
     report = best_agent.get_report()
 
     print("BEST AGENT:")
-    print(report)
+    pprint(report)
